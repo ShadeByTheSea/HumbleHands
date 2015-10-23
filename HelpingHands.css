@@ -1,4 +1,5 @@
 /* CSS declarations go here */
+
 body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
@@ -6,12 +7,14 @@ body{
     border: 0;
     margin: 0;
 }
+
 #navigation{
     background-color: #b2bd00;
     padding: 5px;
     z-index: 9;
     position: relative;
 }
+
 #navigationLinks{
     float: left;
 }
@@ -96,20 +99,45 @@ body{
     width: 100%;
     height: 500px;
 }
+.title{
+    background-color: #ffffff;
+    color: #459ed7;
+    padding-top: 20px;
+    font-weight: bold;
+}
 #browseOpportunities{
     background-color: #ffffff;
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 #browseOpportunities div div{
     float: left;
 }
-.fa{
-    color: white;
-}
-.animal{
+.paw-blue{
     background-color: #459ed7;
-    border-radius: 50% 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     text-align: center;
+}
+.paw-green{
+    background-color: #b2bd00;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-orange{
+    background-color: #bd7433;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-blue i, .paw-green i, .paw-orange i{
+    color: white;
+    font-size: 24px;
+    position: relative;
+    top: 10px;
 }
 .green-topper {
   background-image: url(images/green-topper.png);
@@ -118,7 +146,9 @@ body{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
+#quoteSection{
+    background-color: #ffffff;
+}
 #green-section {
   background-color: #b2bd00;
 }
