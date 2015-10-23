@@ -16,10 +16,11 @@
                 "taco"
             ],
             "singups":[
-                "volunteer"
+                "V234",
+                "V235"
             ],
             "organizers":[
-                "organizer1"
+                "sdadas"
             ]
         },
         {
@@ -37,10 +38,11 @@
                 "children"
             ],
             "singups":[
-                "volunteer"
+                "V234",
+                "V235"
             ],
             "organizers":[
-                "organizer1"
+                "sdadas"
             ]
         },
         {
@@ -59,10 +61,11 @@
                 "enviroment"
             ],
             "singups":[
-                "volunteer"
+                "V234",
+                "V235"
             ],
             "organizers":[
-                "organizer2"
+                "sdadas"
             ]
         }
     ]
