@@ -99,3 +99,31 @@ body{
 .no-padding {
   padding: 0;
 }
+
+#filter_select span{
+	display:block;
+}
+#search{
+	height:26px;
+	clear:both;
+}
+#user_search{
+	float:left;	
+}
+#search_submit{
+	float:left;
+	height:100%;
+	width:26px;
+	background-color:#b2bd00;
+	line-height:26px;
+	cursor:pointer;
+}
+#search_submit i {
+	width:100%;
+	height:100%;
+	line-height:100%;
+	text-align:center;
+}
+.lm-social-share-btn{
+	display:inline-block
+}
