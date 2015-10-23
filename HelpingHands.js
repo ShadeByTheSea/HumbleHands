@@ -31,10 +31,9 @@ if (Meteor.isClient) {
         Events = new Meteor.Collection('events');
 	
 	
-	handleInput = function(e) {
-		console.log("jfodisjfoidsjfoasdi");
-		if(oldInput == $("#user_search")[0].value)
-			return;
+	function inputSearch() {
+		if(oldInput == $("#user_search")[0].value || $("#user_search")[0].value == "")
+			return 1;
 		
 		//Clear results
 		while($("#search_results").firstChild)
@@ -55,16 +54,18 @@ if (Meteor.isClient) {
 				break;
 		}
 		var results = Events.find(searchObj).fetch();
-		if(typeof results == "undefined" || results == NULL) {
+		if(typeof results == "undefined" || results == null) {
 			$("#search_results")[0].innerHTML = "<h3>No Results!</h3>";
 		} else {
 			results.forEach(insertEventResult);
 		}
 		
 		oldInput = $("#user_search")[0].value;
+		return 0;
 	}
-	$("#user_search").on("input", handleInput);
-	$("#search_submit").on("click", handleInput);
+	$("#user_search").on("input", inputSearch);
+	document.getElementById("search_submit").addEventListener("click", function(){alert("click");});
+	$("#search_submit").on("click", inputSearch);
 	
 	/*Processes input field and converts it to a string for the database
 	*args: none
