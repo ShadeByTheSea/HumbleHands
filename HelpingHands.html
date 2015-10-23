@@ -1,5 +1,6 @@
 <head>
   <title>Humble Hands</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <!-- *****| Fader Rotation |***** -->
     <script>
         $(function(){
@@ -22,52 +23,44 @@
 <body>
   <!-- Background Image -->
   <div class="fadein">
-            <div class="rotator_01"></div>
-            <!--<div class="rotator_02"></div>
-            <div class="rotator_03"></div>
-            <div class="rotator_04"></div>
-            <div class="rotator_05"></div>
-            <div class="rotator_06"></div>
-            <div class="rotator_07"></div>
-            <div class="rotator_08"></div>
-            <div class="rotator_09"></div>
-            <div class="rotator_10"></div>-->
+    <div class="rotator_01"></div>
+    <!--<div class="rotator_02"></div>-->
   </div>
+  
   <div id="pageWrap">
-	  <!-- Navigation -->
-	  <div class="container_fluid">
-		<div id="navigation">
-		  <div class="container">
-			<!-- Navigation Links -->
-			<div id="navigationLinks">
-			  <ul>
-				<a href="/"><li>Link 1</li></a>
-				<a href="/"><li>Link 2</li></a>
-				<a href="/"><li>Link 3</li></a>
-			  </ul>
-			  <div class="spacer"></div>
-			</div>
-			<!-- Account Links -->
-			<div id="accountLinks">
-			  <ul>
-				<li>{{> loginButtons}}</li>
-				<a href="/"><li>Link 2</li></a>
-			  </ul>
-			  <div class="spacer"></div>
-			</div>
-		  </div>
-		  <div class="spacer"></div>
-		</div>
-	  </div>
-  <!-- Logo Section -->
-	  <div class="row">
-		  <div class="container">
-			<div class="col-md-2 col-md-offset-4 logo">
-				<img  src="images/logo.png" alt="humble hands logo" />
-			</div>
-		  </div>
-	  </div>
-	  <div id="filter_select">
+    <!-- Navigation -->
+    <div class="container_fluid">
+      <div id="navigation">
+        <div class="container">
+          <!-- Navigation Links -->
+          <div id="navigationLinks">
+            <ul>
+              <a href="/"><li>Link 1</li></a>
+              <a href="/"><li>Link 2</li></a>
+              <a href="/"><li>Link 3</li></a>
+            </ul>
+            <div class="spacer"></div>
+          </div>
+          <!-- Account Links -->
+          <div id="accountLinks">
+            <ul>
+              <li>{{> loginButtons}}</li>
+              <a href="/"><li>Link 2</li></a>
+            </ul>
+            <div class="spacer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Logo Section -->
+    <div class="row">
+        <div class="container">
+          <div class="col-md-2 col-md-offset-4 logo">
+              <img  src="images/logo.png" alt="humble hands logo" />
+          </div>
+        </div>
+    </div>
+    <div id="filter_select">
 		<span><input type='radio' name="filter" value="name">Name</span>
 		<span><input type='radio' name="filter" value="date">Date & Time</span>
 		<span><input type='radio' name="filter" value="location">Location</span>
@@ -79,26 +72,64 @@
 	  </div>
 	  <div id="search_results"></div>
 	{{> socialShareBasic}}
-  </div><!--pageWrap-->
-  
-  <!-- QUOTE / STAT SECTION -->
-  <div class="row">
-    <div class="container-fluid col-xs-12 no-padding">
-    <div class="green-topper"></div>
-    <div id="green-section">
-    <p class="quote">We make a living by what we do, but we make a life by what we give.</p>
+ 
+    <!-- Find a Opportunity Section -->
+    <div class="row opportunity">
+      <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+            <div id="opportunityLinks" class="text-center">
+              <p>We are a community-based group connecting Hampton Roads volunteers with the organizations that need them the most.</p>
+              <div id="findOpportunity"></div>
+              <br>
+            </div>
+          </div>
+      </div>
     </div>
-   </div>
- </div>
+    <!-- Browse Opportunities -->
+    <div class="row">
+      <div class="title container col-md-6 col-md-offset-3">
+        <p>Browse Opportunities</p>
+      </div>
+    </div>
+    <div class="row" id="browseOpportunities">
+      <div class="container">
+          <div class="col-md-1 col-md-offset-3 animal">
+            <i class="fa fa-paw fa-2x"></i>
+          </div>
+          <div class="col-md-1 animal">
+            <i class="fa fa-paw fa-2x"></i>
+          </div>
+          <div class="col-md-1 animal">
+            <i class="fa fa-paw fa-2x"></i>
+          </div>
+          <div class="col-md-1 animal">
+            <i class="fa fa-paw fa-2x"></i>
+          </div>
+          <div class="col-md-1 animal">
+            <i class="fa fa-paw fa-2x"></i>
+          </div>
+          <div class="col-md-1 animal">
+            <i class="fa fa-paw fa-2x"></i>
+          </div>
+      </div>
+    </div>
+    <!-- QUOTE / STAT SECTION -->
+    <div class="row">
+      <div class="container-fluid col-xs-12 no-padding">
+        <div class="green-topper"></div>
+        <div id="green-section">
+          <p class="quote">We make a living by what we do, but we make a life by what we give.</p>
+        </div>
+      </div>
+    </div>
   
   <!-- FOOTER -->
   <div class="row">
     <div class="container-fluid col-xs-12" id="footer">
       
-    <div class="spacer"></div>
     </div>
   </div>
-
+</div><!--pageWrap-->
 </body>
 
 

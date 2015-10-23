@@ -1,5 +1,7 @@
 /* CSS declarations go here */
 body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     border: 0;
     margin: 0;
@@ -7,6 +9,8 @@ body{
 #navigation{
     background-color: #b2bd00;
     padding: 5px;
+    z-index: 9;
+    position: relative;
 }
 #navigationLinks{
     float: left;
@@ -57,25 +61,56 @@ body{
 	background-position: center center;
 }*/
 .fadein{ 
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: 190px;
+    top: 0px;
     width: 100%;
-    height: 550px;
+    height: 1200px;
 }
 .rotator_01{
     background: url("images/rotator01.jpg") center no-repeat;
     background-size: cover;
     background-attachement: fixed;
     width: 100%;
-    height: 550px;
+    height: 1200px;
     position: relative;
+    z-index: 0;
 }
 #pageWrap{
-    z-index: 2;
+    z-index: 5;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.opportunity {
+    position: relative;
+    margin-top: 80px;
+    min-height: 200px;
+}
+#opportunityLinks p{
+    color: white;
     position: relative;
 }
-
+#findOpportunity {
+    background-color: #459ed7;
+    width: 100%;
+    height: 500px;
+}
+#browseOpportunities{
+    background-color: #ffffff;
+    padding: 50px 0px;
+}
+#browseOpportunities div div{
+    float: left;
+}
+.fa{
+    color: white;
+}
+.animal{
+    background-color: #459ed7;
+    border-radius: 50% 50%;
+    text-align: center;
+}
 .green-topper {
   background-image: url(images/green-topper.png);
   height: 46px;
