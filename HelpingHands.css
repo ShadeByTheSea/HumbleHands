@@ -43,10 +43,11 @@ body{
     clear: both;
 }
 .logo{
-    position: absolute;
+  position: absolute;
     top: 10px;
     z-index: 10;
 }
+
 /*#mainSection{
     background-image: url("images/rotator01.jpg");
     min-height: 100%;
@@ -73,4 +74,28 @@ body{
 #pageWrap{
     z-index: 2;
     position: relative;
+}
+
+.green-topper {
+  background-image: url(images/green-topper.png);
+  height: 46px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#green-section {
+  background-color: #b2bd00;
+}
+
+#footer {
+  background-image: url(images/footer.png);
+  height: 200px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.no-padding {
+  padding: 0;
 }
