@@ -1,4 +1,4 @@
-Helping Hands
+Humble Hands
 =============
 
 Web Application for finding volunteers and creating community events.
