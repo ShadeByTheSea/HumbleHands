@@ -44,7 +44,8 @@ body{
 }
 .logo{
     position: absolute;
-    z-index: 2;
+    top: 10px;
+    z-index: 10;
 }
 /*#mainSection{
     background-image: url("images/rotator01.jpg");
