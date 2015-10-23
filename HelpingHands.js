@@ -2,6 +2,7 @@ if (Meteor.isClient) {
 	oldInput = "";
 	currentFilter = "name";	//1 - name, 2 - date+time, 3 - location, 4 - tag list
 	Organization = new Meteor.Collection('organization');
+        Events = new Meteor.Collection('events');
 	//document.getElementById("user_search").addEventListener("input", handleInput);
 	
 	function handleInput(e) {
@@ -61,6 +62,7 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
+        Events = new Meteor.Collection('events');
 	Meteor.startup(function () {
 		// code to run on server at startup
 	});
