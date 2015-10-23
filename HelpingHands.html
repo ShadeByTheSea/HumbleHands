@@ -1,8 +1,5 @@
 <head>
   <title>Humble Hands</title>
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="HelpingHands.css" rel="stylesheet" />
-  
 </head>
 
 <body>
@@ -22,7 +19,7 @@
         <!-- Account Links -->
         <div id="accountLinks">
           <ul>
-            <a href="/"><li>Link 1</li></a>
+            <li>{{> loginButtons}}</li>
             <a href="/"><li>Link 2</li></a>
           </ul>
           <div class="spacer"></div>
@@ -33,11 +30,10 @@
   </div>
   <!-- Logo Section -->
   <div class="row">
-  <div class="container">
-    <div class="col-md-2 col-md-offset-5 logo">
-        <img  src="images/logo.png" alt="humble hands logo" />
-    </div>
-  </div>
-  </div>
+	  <div class="container">
+		<div class="col-md-2 col-md-offset-5 logo">
+			<img  src="images/logo.png" alt="humble hands logo" />
+		</div>
+	  </div>
   </div>
 </body>
