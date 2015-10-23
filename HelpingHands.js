@@ -55,15 +55,17 @@ if (Meteor.isClient) {
 		evt_city = entry.city,
 		evt_state = entry.state;
 		
-		/*var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">"+
+		var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">"+
 		"<span name=\"name\">"+event_name+"</span>"+
 		"<span name=\"date\">"+evt_date+"</span>"+
 		"<span name=\"city\">"+evt_city+"</span>"+
 		"<span name=\"state\">"+evt_state+"</span>"+
-		entryHTML += "</div>";*/
-		document.createElement("div");
+		entryHTML += "</div>";
+		/*var new_result = document.createElement("div");
+		new_result.id = "result"+(index+1);
+		new_result.className = "result_entry";*/
 		
-		$("#search_results").innerHTML = entryHTML;
+		$("#search_results").appendChild(new_result);
 	}
 }
 
