@@ -31,9 +31,10 @@ if (Meteor.isClient) {
         Events = new Meteor.Collection('events');
 	
 	
-	//document.getElementById("user_search").addEventListener("input", handleInput);
+	$("#user_search").addEventListener("input", handleInput);
+	$("$search_submit").addEventListener("click", handleInput);
 	function handleInput(e) {
-		if(oldInput == e.currentTarget.value)
+		if(oldInput == $("#user_search")[0].value)
 			return;
 		
 		//Clear results
@@ -42,33 +43,33 @@ if (Meteor.isClient) {
 		
 		switch(currentFilter) {
 			case "name":
-				var searchObj = {organization:e.currentTarget.value}
+				var searchObj = {organization:$("#user_search")[0].value}
 				break;
 			case "date":
 				var searchObj = {date:getUserDate()}
 				break;
 			case "location":
-				var searchObj = {location:e.currentTarget.value}
+				var searchObj = {location:$("#user_search")[0].value}
 				break;
 			case "tag list":
-				var searchObj = {tag_list:e.currentTarget.value}
+				var searchObj = {tag_list:$("#user_search")[0].value}
 				break;
 		}
 		var results = Events.find(searchObj).fetch();
 		if(typeof results == "undefined" || results == NULL) {
-			$("#search_results").innerHTML = "<h3>No Results!</h3>";
+			$("#search_results")[0].innerHTML = "<h3>No Results!</h3>";
 		} else {
 			results.forEach(insertEventResult);
 		}
 		
-		oldInput = e.currentTarget.value
+		oldInput = $("#user_search")[0].value
 	}
 	
 	/*Processes input field and converts it to a string for the database
 	*args: none
 	*return: string for database search*/
 	function getUserDate() {
-		var udate = $("#search_field").value;
+		var udate = $("#search_field")[0].value;
 		//TODO - convert user's string (e.g. "December 15") to database formatted time (e.g. 17263275482)
 		return udate;
 	}
