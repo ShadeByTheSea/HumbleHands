@@ -31,6 +31,7 @@ if (Meteor.isClient) {
         Events = new Meteor.Collection('events');
 	
 	
+	//document.getElementById("user_search").addEventListener("input", handleInput);
 	function handleInput(e) {
 		if(oldInput == e.currentTarget.value)
 			return;
@@ -62,7 +63,6 @@ if (Meteor.isClient) {
 		
 		oldInput = e.currentTarget.value
 	}
-	//document.getElementById("user_search").addEventListener("input", handleInput);
 	
 	/*Processes input field and converts it to a string for the database
 	*args: none
@@ -82,24 +82,29 @@ if (Meteor.isClient) {
 		evt_city = entry.city,
 		evt_state = entry.state;
 		
+		//method 1
 		var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">"+
-		"<span name=\"name\">"+event_name+"</span>"+
+		"<span name=\"name\">"+evt_name+"</span>"+
 		"<span name=\"date\">"+evt_date+"</span>"+
 		"<span name=\"city\">"+evt_city+"</span>"+
 		"<span name=\"state\">"+evt_state+"</span>"+
-		"</div>";
+		"</div><br/>";
+		$("#search_results")[0].innerHTML += entryHTML;
+		
+		//method 2
 		/*var new_result = document.createElement("div");
 		new_result.id = "result"+(index+1);
-		new_result.className = "result_entry";*/
+		new_result.className = "result_entry";
+		$("#search_results").appendChild(new_result);*/
 		
-		$("#search_results").appendChild(new_result);
+		//console.log("new entry html: " + entryHTML);
 	}
 	
-	populate = function() {
-		var tmp_search = {name:"One"};
-		var tmp_result = Events.find(tmp_search).fetch();
+	/*populate = function() {
+		var tmp_search = {name:"TestOne"};
+		var tmp_result = Events.find(/*tmp_search* /).fetch();
 		tmp_result.forEach(insertEventResult);
-	}
+	}*/
 }
 
 if (Meteor.isServer) {
