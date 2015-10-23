@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 twbs:bootstrap
 accounts-password
 accounts-ui
+lukemadera:social-share
+fortawesome:fontawesome
