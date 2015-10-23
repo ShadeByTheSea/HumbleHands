@@ -53,16 +53,16 @@ if (Meteor.isClient) {
 			
 			switch(currentFilter) {
 				case "name":
-					var searchObj = {organization:$("#user_search")[0].value}
+					var searchObj = {organization: { $text:{ $search: $("#user_search")[0].value } }}
 					break;
 				case "date":
 					var searchObj = {date:getUserDate()}
 					break;
 				case "location":
-					var searchObj = {location:$("#user_search")[0].value}
+					var searchObj = {location:{ $text: { $search: $("#user_search")[0].value } }}
 					break;
 				case "tag list":
-					var searchObj = {tag_list:$("#user_search")[0].value}
+					var searchObj = {tags:{ $in: [ $("#user_search")[0].value.replace(' ', ',') ] }}
 					break;
 			}
 			var results = Events.find(searchObj).fetch();
