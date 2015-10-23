@@ -2,10 +2,40 @@
   <title>Humble Hands</title>
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="HelpingHands.css" rel="stylesheet" />
-  
+  <!-- *****| Fader Rotation |***** -->
+    <script>
+        $(function(){
+            $ds =$('.fadein div');
+            $ds.hide().eq(0).show();
+            setInterval(function(){
+                $ds.filter(':visible').fadeOut(function(){
+                    var $div = $(this).next('div');
+                    if ($div.length == 0) {
+                        $ds.eq(0).fadeIn();
+                    }else{
+                        $div.fadeIn();
+                    }
+                });
+            },5000);
+        });
+    </script>
 </head>
 
 <body>
+  <!-- Background Image -->
+  <div class="fadein">
+            <div class="rotator_01"></div>
+            <!--<div class="rotator_02"></div>
+            <div class="rotator_03"></div>
+            <div class="rotator_04"></div>
+            <div class="rotator_05"></div>
+            <div class="rotator_06"></div>
+            <div class="rotator_07"></div>
+            <div class="rotator_08"></div>
+            <div class="rotator_09"></div>
+            <div class="rotator_10"></div>-->
+        </div>
+  <div id="pageWrap">
   <!-- Navigation -->
   <div class="container_fluid">
     <div id="navigation">
