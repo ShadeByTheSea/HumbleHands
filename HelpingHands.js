@@ -8,6 +8,10 @@ if (Meteor.isClient) {
 		if(oldInput == e.currentTarget.value)
 			return;
 		
+		//Clear results
+		while($("#search_results").firstChild)
+			$("#search_results").removeChild($("#search_results"));
+		
 		switch(currentFilter) {
 			case "name":
 				var searchObj = {organization:e.currentTarget.value}
@@ -22,8 +26,13 @@ if (Meteor.isClient) {
 				var searchObj = {tag_list:e.currentTarget.value}
 				break;
 		}
-		var results = Organization.find(searchObj).fetch();
-		results.forEach(insertEventResult);
+		var results = Organization.findAll(searchObj).fetch();
+		if(typeof results == "undefined" || results == NULL) {
+			//no results
+		} else {
+			results.forEach(insertEventResult);
+		}
+		
 		oldInput = e.currentTarget.value
 	}
 	
@@ -44,7 +53,7 @@ if (Meteor.isClient) {
 		date = entry.date,
 		location = entry.location;
 		
-		var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"search_results\">";
+		var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">";
 		entryHTML += "<span name=\"name\">"+org_name+"</span>";
 		entryHTML += "</div>";
 	}
