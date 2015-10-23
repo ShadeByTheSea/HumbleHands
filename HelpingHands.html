@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <!-- Background Image -->
+   <!-- Background Image -->
   <div class="fadein">
             <div class="rotator_01"></div>
             <!--<div class="rotator_02"></div>
@@ -34,38 +34,48 @@
             <div class="rotator_10"></div>-->
   </div>
   <div id="pageWrap">
-  <!-- Navigation -->
-  <div class="container_fluid">
-    <div id="navigation">
-      <div class="container">
-        <!-- Navigation Links -->
-        <div id="navigationLinks">
-          <ul>
-            <a href="/"><li>Link 1</li></a>
-            <a href="/"><li>Link 2</li></a>
-            <a href="/"><li>Link 3</li></a>
-          </ul>
+    <!-- Navigation -->
+    <div class="container_fluid">
+      <div id="navigation">
+        <div class="container">
+          <!-- Navigation Links -->
+          <div id="navigationLinks">
+            <ul>
+              <a href="/"><li>Link 1</li></a>
+              <a href="/"><li>Link 2</li></a>
+              <a href="/"><li>Link 3</li></a>
+            </ul>
+            <div class="spacer"></div>
+          </div>
+          <!-- Account Links -->
+          <div id="accountLinks">
+            <ul>
+              <li>{{> loginButtons}}</li>
+              <a href="/"><li>Link 2</li></a>
+            </ul>
+            <div class="spacer"></div>
+          </div>
+        </div>
+        <div class="spacer"></div>
+      </div>
+    </div>
+    <!-- Logo Section -->
+    <div class="row">
+        <div class="container">
+          <div class="col-md-2 col-md-offset-4 logo">
+              <img  src="images/logo.png" alt="humble hands logo" />
+              <div class="spacer"></div>
+          </div>
           <div class="spacer"></div>
         </div>
-        <!-- Account Links -->
-        <div id="accountLinks">
-          <ul>
-            <li>{{> loginButtons}}</li>
-            <a href="/"><li>Link 2</li></a>
-          </ul>
-          <div class="spacer"></div>
+    </div>
+    <!-- Find a Opportunity Section -->
+    <!--<div class="row">
+      <div class="container">
+        <div id="opportunityLinks">
+          <p>We are a community-based group connecting Hampton Roads volunteers with the organizations that need them the most.</p>
         </div>
       </div>
-      <div class="spacer"></div>
-    </div>
-  </div>
-  <!-- Logo Section -->
-  <div class="row">
-	  <div class="container">
-		<div class="col-md-2 col-md-offset-4 logo">
-			<img  src="images/logo.png" alt="humble hands logo" />
-		</div>
-	  </div>
-  </div>
+    </div>-->
   </div>
 </body>
