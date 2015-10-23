@@ -39,7 +39,7 @@ if (Meteor.isClient) {
 		Events = new Meteor.Collection('events');
 		
 		
-		$("input[name='filter']").each(function(i, e){e.addEventListener("select", radioButtonSelect);});
+		$("input[name='filter']").each(function(i, e){e.addEventListener("click", radioButtonSelect);});
 		$("#user_search").on("input", inputSearch);
 		$("#search_submit").on("click", inputSearch);
 		
@@ -113,8 +113,7 @@ if (Meteor.isClient) {
 		}
 		
 		function radioButtonSelect(e) {
-			alert(e.currentTarget.value);
-			//currentFilter = e.currentTarget.value;
+			currentFilter = e.currentTarget.value;
 		}
 		
 		populate = function() {
