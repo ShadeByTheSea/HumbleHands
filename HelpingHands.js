@@ -3,7 +3,7 @@ if (Meteor.isClient) {
 	currentFilter = "name";	//1 - name, 2 - date+time, 3 - location, 4 - tag list
 	Organization = new Meteor.Collection('organization');
         Events = new Meteor.Collection('events');
-	//document.getElementById("user_search").addEventListener("input", handleInput);
+	
 	
 	function handleInput(e) {
 		if(oldInput == e.currentTarget.value)
@@ -27,7 +27,7 @@ if (Meteor.isClient) {
 				var searchObj = {tag_list:e.currentTarget.value}
 				break;
 		}
-		var results = Events.findAll(searchObj).fetch();
+		var results = Events.find(searchObj).fetch();
 		if(typeof results == "undefined" || results == NULL) {
 			$("#search_results").innerHTML = "<h3>No Results!</h3>";
 		} else {
@@ -36,6 +36,7 @@ if (Meteor.isClient) {
 		
 		oldInput = e.currentTarget.value
 	}
+	//document.getElementById("user_search").addEventListener("input", handleInput);
 	
 	/*Processes input field and converts it to a string for the database
 	*args: none
@@ -60,12 +61,18 @@ if (Meteor.isClient) {
 		"<span name=\"date\">"+evt_date+"</span>"+
 		"<span name=\"city\">"+evt_city+"</span>"+
 		"<span name=\"state\">"+evt_state+"</span>"+
-		entryHTML += "</div>";
+		"</div>";
 		/*var new_result = document.createElement("div");
 		new_result.id = "result"+(index+1);
 		new_result.className = "result_entry";*/
 		
 		$("#search_results").appendChild(new_result);
+	}
+	
+	populate = function() {
+		var tmp_search = {name:"One"};
+		var tmp_result = Events.find(tmp_search).fetch();
+		tmp_result.forEach(insertEventResult);
 	}
 }
 
