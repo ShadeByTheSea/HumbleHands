@@ -1,8 +1,39 @@
 <head>
   <title>Humble Hands</title>
+  <!-- *****| Fader Rotation |***** -->
+    <script>
+        $(function(){
+            $ds =$('.fadein div');
+            $ds.hide().eq(0).show();
+            setInterval(function(){
+                $ds.filter(':visible').fadeOut(function(){
+                    var $div = $(this).next('div');
+                    if ($div.length == 0) {
+                        $ds.eq(0).fadeIn();
+                    }else{
+                        $div.fadeIn();
+                    }
+                });
+            },5000);
+        });
+    </script>
 </head>
 
 <body>
+  <!-- Background Image -->
+  <div class="fadein">
+            <div class="rotator_01"></div>
+            <!--<div class="rotator_02"></div>
+            <div class="rotator_03"></div>
+            <div class="rotator_04"></div>
+            <div class="rotator_05"></div>
+            <div class="rotator_06"></div>
+            <div class="rotator_07"></div>
+            <div class="rotator_08"></div>
+            <div class="rotator_09"></div>
+            <div class="rotator_10"></div>-->
+  </div>
+  <div id="pageWrap">
   <!-- Navigation -->
   <div class="container_fluid">
     <div id="navigation">
@@ -31,7 +62,7 @@
   <!-- Logo Section -->
   <div class="row">
 	  <div class="container">
-		<div class="col-md-2 col-md-offset-5 logo">
+		<div class="col-md-2 col-md-offset-4 logo">
 			<img  src="images/logo.png" alt="humble hands logo" />
 		</div>
 	  </div>
