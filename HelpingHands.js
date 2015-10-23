@@ -27,9 +27,9 @@ if (Meteor.isClient) {
 				var searchObj = {tag_list:e.currentTarget.value}
 				break;
 		}
-		var results = Organization.findAll(searchObj).fetch();
+		var results = Events.findAll(searchObj).fetch();
 		if(typeof results == "undefined" || results == NULL) {
-			//no results
+			$("#search_results").innerHTML = "<h3>No Results!</h3>";
 		} else {
 			results.forEach(insertEventResult);
 		}
@@ -41,22 +41,29 @@ if (Meteor.isClient) {
 	*args: none
 	*return: string for database search*/
 	function getUserDate() {
-		var udate = document.getElementById("date").text;
-		//TODO - udate parsing
+		var udate = $("#search_field").value;
+		//TODO - convert user's string (e.g. "December 15") to database formatted time (e.g. 17263275482)
 		return udate;
 	}
 	
-	/*takes a set of events and shows them in the results field
+	/*Extract data from argument, apply HTML formatting, add to "search_results" element
 	*args: array of events
 	*return: none*/
 	function insertEventResult(entry, index, arr) {
-		var org_name = entry.name,
-		date = entry.date,
-		location = entry.location;
+		var evt_name = entry.name,
+		evt_date = entry.date,
+		evt_city = entry.city,
+		evt_state = entry.state;
 		
-		var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">";
-		entryHTML += "<span name=\"name\">"+org_name+"</span>";
-		entryHTML += "</div>";
+		/*var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">"+
+		"<span name=\"name\">"+event_name+"</span>"+
+		"<span name=\"date\">"+evt_date+"</span>"+
+		"<span name=\"city\">"+evt_city+"</span>"+
+		"<span name=\"state\">"+evt_state+"</span>"+
+		entryHTML += "</div>";*/
+		document.createElement("div");
+		
+		$("#search_results").innerHTML = entryHTML;
 	}
 }
 
