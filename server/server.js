@@ -5,4 +5,10 @@ Meteor.startup(function () {
       Organization.insert(doc);
     });
   }
+  // Insert sample data if the events collection is empty
+  if (Events.find().count() === 0) {
+    JSON.parse(Assets.getText("events.json")).events.forEach(function (doc) {
+      Events.insert(doc);
+    });
+  }
 });

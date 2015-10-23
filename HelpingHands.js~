@@ -1,5 +1,4 @@
 Organization = new Meteor.Collection('organization');
-Events = new Meteor.Collection('events');
 
 if (Meteor.isClient) {
   // counter starts at 0
