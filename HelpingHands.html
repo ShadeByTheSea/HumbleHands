@@ -1,90 +1,104 @@
 <head>
+  
   <title>Humble Hands</title>
+  
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  
   <!-- *****| Fader Rotation |***** -->
-    <script>
-        $(function(){
-            $ds =$('.fadein div');
-            $ds.hide().eq(0).show();
-            setInterval(function(){
-                $ds.filter(':visible').fadeOut(function(){
-                    var $div = $(this).next('div');
-                    if ($div.length == 0) {
-                        $ds.eq(0).fadeIn();
-                    }else{
-                        $div.fadeIn();
-                    }
-                });
-            },5000);
-        });
-    </script>
+  
+  <!--<script>
+      $(function(){
+          $ds =$('.fadein div');
+          $ds.hide().eq(0).show();
+          setInterval(function(){
+              $ds.filter(':visible').fadeOut(function(){
+                  var $div = $(this).next('div');
+                  if ($div.length == 0) {
+                      $ds.eq(0).fadeIn();
+                  }else{
+                      $div.fadeIn();
+                  }
+              });
+          },5000);
+      });
+  </script>-->
+    
 </head>
 
 <body>
-  <!-- Background Image -->
+  
+  <!-- *****| Background Image |***** -->
   <div class="fadein">
     <div class="rotator_01"></div>
     <!--<div class="rotator_02"></div>-->
   </div>
   
+  <!-- *****| Page Wrap |***** -->
   <div id="pageWrap">
-    <!-- Navigation -->
+    
+    <!-- *****| Navigation |***** -->
     <div class="container_fluid">
       <div id="navigation">
         <div class="container">
-          <!-- Navigation Links -->
-          <div id="navigationLinks">
+          <div id="navigationLinks" class="col-md-6">
             <ul>
-              <a href="/"><li>Link 1</li></a>
-              <a href="/"><li>Link 2</li></a>
-              <a href="/"><li>Link 3</li></a>
+              <li><a href="#">Volunteer</a></li>
+              <li>|</li>
+              <li><a href="#">Find a Volunteer</a></li>
+              <li>|</li>
+              <li><a href="#">Explore the Causes</a></li>
             </ul>
             <div class="spacer"></div>
           </div>
-          <!-- Account Links -->
-          <div id="accountLinks">
+          <!-- *****| Account Links |***** -->
+          <div id="accountLinks" class="col-md-6 text-right">
             <ul>
               <li>{{> loginButtons}}</li>
-              <a href="/"><li>Link 2</li></a>
+              <li><a href="#">My Account</a></li>
             </ul>
-            <div class="spacer"></div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Logo Section -->
+    
+    <!-- *****| Logo Section |***** -->
     <div class="row">
         <div class="container">
-          <div class="col-md-2 col-md-offset-4 logo">
+          <div class="col-md-2 col-md-offset-5 logo">
               <img  src="images/logo.png" alt="humble hands logo" />
           </div>
         </div>
     </div>
-    <div id="filter_select">
-		<span><input type='radio' name="filter" value="name">Name</span>
-		<span><input type='radio' name="filter" value="date">Date & Time</span>
-		<span><input type='radio' name="filter" value="location">Location</span>
-		<span><input type='radio' name="filter" value="tags">Type of Event</span>
-	  </div>
-	  <div id="search">
-		<input type='text' name="search" id="user_search">
-		<div id="search_submit"><i class="fa fa-search"></i></div>
-	  </div>
-	  <div id="search_results"></div>
+    
 	{{> socialShareBasic}}
  
-    <!-- Find a Opportunity Section -->
-    <div class="row opportunity">
+    <!-- *****| Find a Opportunity Section |****** -->
+    <div class="row opportunityFinder">
       <div class="container">
-          <div class="col-md-8 col-md-offset-2">
-            <div id="opportunityLinks" class="text-center">
-              <div id="findOpportunity"></div>
-              <br>
+        <div id="searchField" class="col-md-8 col-md-offset-2">
+          <div id="opportunityLinks" class="col-md-6">
+            <div id="findOpportunity">
+              <div id="filter_select">
+                <span><input type='radio' name="filter" value="name">Name</span>
+                <span><input type='radio' name="filter" value="date">Date & Time</span>
+                <span><input type='radio' name="filter" value="location">Location</span>
+                <span><input type='radio' name="filter" value="tags">Type of Event</span>
+              </div>
+              <div id="search">
+                <input type='text' name="search" id="user_search">
+                <div id="search_submit"><i class="fa fa-search"></i></div>
+              </div>
+              <div id="search_results"></div>
             </div>
           </div>
+          <div id="searchResults" class="col-md-6">
+            <span>Search Results</span>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Browse Opportunities -->
+    
+    <!-- *****| Browse Opportunities |***** -->
     <div class="row title">
       <div class="container col-md-6 col-md-offset-3 text-center">
         <p>Browse Opportunities</p>
@@ -97,39 +111,41 @@
             <div class="browseText">Animals<br>Here is a short description.</div>
           </div>
           <div class="col-md-1">
-            <div class="paw-green"><i class="fa fa-paw"></i></div>
+            <div class="paw-green"><i class="fa fa-child"></i></div>
           </div>
           <div class="col-md-1">
-            <div class="paw-orange"><i class="fa fa-paw"></i></div>
+            <div class="paw-orange"><i class="fa fa-futbol-o"></i></div>
           </div>
           <div class="col-md-1">
-            <div class="paw-blue"><i class="fa fa-paw"></i></div>
+            <div class="paw-blue"><i class="fa fa-medkit"></i></div>
           </div>
           <div class="col-md-1">
-            <div class="paw-green"><i class="fa fa-paw"></i></div>
+            <div class="paw-green"><i class="fa fa-recycle"></i></div>
           </div>
           <div class="col-md-1">
-            <div class="paw-orange"><i class="fa fa-paw"></i></div>
+            <div class="paw-orange"><i class="fa fa-heart"></i></div>
           </div>
       </div>
     </div>
-    <!-- QUOTE / STAT SECTION -->
-    <div class="row" id="quoteSection">
+    
+    <!-- *****| Quote / Stat Section |***** -->
+    <!--<div class="row" id="quoteSection">
       <div class="container-fluid col-xs-12 no-padding">
         <div class="green-topper"></div>
         <div id="green-section">
           <p class="quote">We make a living by what we do, but we make a life by what we give.</p>
         </div>
       </div>
-    </div>
+    </div>-->
   
-  <!-- FOOTER -->
-  <div class="row">
+  <!-- *****| Footer |***** -->
+  <div id="footer" class="row">
     <div class="container-fluid col-xs-12" id="footer">
       
     </div>
   </div>
-</div><!--pageWrap-->
+  
+</div><!-- End pageWrap -->
 </body>
 
 
