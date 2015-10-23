@@ -1,4 +1,30 @@
 if (Meteor.isClient) {
+	
+	Template.socialShareBasic.helpers({
+		opts: function() {
+		  var opts ={
+			facebook: true,
+			twitter: true,
+			pinterest: false,
+			shareData: {
+			  url: 'http://google.com'
+			}
+		  };
+		  return opts;
+		}
+	  });
+	  
+	  
+	 Template.lmSocialShare.rendered = function(){
+		var inner = $('.lm-social-share-facebook').html();
+		var icon = "<i class='fa fa-facebook-square'></i>";
+		$('.lm-social-share-facebook').html(icon + inner);
+		
+		var inner = $('.lm-social-share-twitter').html();
+		var icon = "<i class='fa fa-twitter-square'></i>";
+		$('.lm-social-share-twitter').html(icon + inner);
+	 };
+  
 	oldInput = "";
 	currentFilter = "name";	//1 - name, 2 - date+time, 3 - location, 4 - tag list
 	Organization = new Meteor.Collection('organization');
