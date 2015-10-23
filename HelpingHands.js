@@ -31,9 +31,8 @@ if (Meteor.isClient) {
         Events = new Meteor.Collection('events');
 	
 	
-	$("#user_search").addEventListener("input", handleInput);
-	$("$search_submit").addEventListener("click", handleInput);
-	function handleInput(e) {
+	handleInput = function(e) {
+		console.log("jfodisjfoidsjfoasdi");
 		if(oldInput == $("#user_search")[0].value)
 			return;
 		
@@ -62,8 +61,10 @@ if (Meteor.isClient) {
 			results.forEach(insertEventResult);
 		}
 		
-		oldInput = $("#user_search")[0].value
+		oldInput = $("#user_search")[0].value;
 	}
+	$("#user_search").on("input", handleInput);
+	$("#search_submit").on("click", handleInput);
 	
 	/*Processes input field and converts it to a string for the database
 	*args: none
@@ -101,11 +102,11 @@ if (Meteor.isClient) {
 		//console.log("new entry html: " + entryHTML);
 	}
 	
-	/*populate = function() {
-		var tmp_search = {name:"TestOne"};
-		var tmp_result = Events.find(/*tmp_search* /).fetch();
+	populate = function() {
+		//var tmp_search = {name:"TestOne"};
+		var tmp_result = Events.find("One").fetch();
 		tmp_result.forEach(insertEventResult);
-	}*/
+	}
 }
 
 if (Meteor.isServer) {
