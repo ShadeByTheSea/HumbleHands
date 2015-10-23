@@ -31,8 +31,9 @@ if (Meteor.isClient) {
         Events = new Meteor.Collection('events');
 	
 	
-	function handleInput(e) {
-		if(oldInput == e.currentTarget.value)
+	handleInput = function(e) {
+		console.log("jfodisjfoidsjfoasdi");
+		if(oldInput == $("#user_search")[0].value)
 			return;
 		
 		//Clear results
@@ -41,34 +42,35 @@ if (Meteor.isClient) {
 		
 		switch(currentFilter) {
 			case "name":
-				var searchObj = {organization:e.currentTarget.value}
+				var searchObj = {organization:$("#user_search")[0].value}
 				break;
 			case "date":
 				var searchObj = {date:getUserDate()}
 				break;
 			case "location":
-				var searchObj = {location:e.currentTarget.value}
+				var searchObj = {location:$("#user_search")[0].value}
 				break;
 			case "tag list":
-				var searchObj = {tag_list:e.currentTarget.value}
+				var searchObj = {tag_list:$("#user_search")[0].value}
 				break;
 		}
 		var results = Events.find(searchObj).fetch();
 		if(typeof results == "undefined" || results == NULL) {
-			$("#search_results").innerHTML = "<h3>No Results!</h3>";
+			$("#search_results")[0].innerHTML = "<h3>No Results!</h3>";
 		} else {
 			results.forEach(insertEventResult);
 		}
 		
-		oldInput = e.currentTarget.value
+		oldInput = $("#user_search")[0].value;
 	}
-	//document.getElementById("user_search").addEventListener("input", handleInput);
+	$("#user_search").on("input", handleInput);
+	$("#search_submit").on("click", handleInput);
 	
 	/*Processes input field and converts it to a string for the database
 	*args: none
 	*return: string for database search*/
 	function getUserDate() {
-		var udate = $("#search_field").value;
+		var udate = $("#search_field")[0].value;
 		//TODO - convert user's string (e.g. "December 15") to database formatted time (e.g. 17263275482)
 		return udate;
 	}
@@ -82,22 +84,27 @@ if (Meteor.isClient) {
 		evt_city = entry.city,
 		evt_state = entry.state;
 		
+		//method 1
 		var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">"+
-		"<span name=\"name\">"+event_name+"</span>"+
+		"<span name=\"name\">"+evt_name+"</span>"+
 		"<span name=\"date\">"+evt_date+"</span>"+
 		"<span name=\"city\">"+evt_city+"</span>"+
 		"<span name=\"state\">"+evt_state+"</span>"+
-		"</div>";
+		"</div><br/>";
+		$("#search_results")[0].innerHTML += entryHTML;
+		
+		//method 2
 		/*var new_result = document.createElement("div");
 		new_result.id = "result"+(index+1);
-		new_result.className = "result_entry";*/
+		new_result.className = "result_entry";
+		$("#search_results").appendChild(new_result);*/
 		
-		$("#search_results").appendChild(new_result);
+		//console.log("new entry html: " + entryHTML);
 	}
 	
 	populate = function() {
-		var tmp_search = {name:"One"};
-		var tmp_result = Events.find(tmp_search).fetch();
+		//var tmp_search = {name:"TestOne"};
+		var tmp_result = Events.find("One").fetch();
 		tmp_result.forEach(insertEventResult);
 	}
 }
