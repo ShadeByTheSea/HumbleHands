@@ -8,51 +8,60 @@ body{
     margin: 0;
 }
 
-#navigation{
-    background-color: #b2bd00;
-    padding: 5px;
-    z-index: 9;
+/** *****| Image Rotation |***** **/
+.fadein { 
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    height: 1200px;
+}
+.rotator_01 {
+    background: url("images/rotator01.jpg") center no-repeat;
+    background-size: cover;
+    background-attachement: fixed;
+    width: 100%;
+    height: 1200px;
     position: relative;
+    z-index: 0;
 }
 
-#navigationLinks{
+/** *****| Header |***** **/
+#navigation {
+    position: relative;
+    background-color: #b2bd00;
+    height: 50px;
+}
+#navigationLinks ul li {
+    position: relative;
     float: left;
+    top: 13px;
+    margin: 0 5px;
+    list-style: none;
+    color: #ffffff;
 }
-#navigationLinks ul li{
+#navigationLinks ul li a {
+    color: #FFFFFF;
+}
+#accountLinks ul li {
+    position: relative;
     display: inline-block;
     list-style: none;
     color: #ffffff;
-    padding: 0px 5px;
+    margin: 0px 5px;
+    top: 13px;
 }
-#navigationLinks a{
-    border-right: 1px solid #ffffff;
-}
-#navigationLinks ul li:last-child{
-    border-right: 0px solid #ffffff;
-}
-#accountLinks{
-    float: right;
-}
-#accountLinks ul li{
-    display: inline-block;
-    list-style: none;
-    color: #ffffff;
-    padding: 0px 5px;
-}
-#accountLinks a{
-    border-right: 1px solid #ffffff;
-}
-#accountLinks ul li:last-child{
-    border-right: 0px solid #ffffff;
+#accountLinks ul li a {
+    color: #FFF;
 }
 
-.spacer{
-    clear: both;
-}
+/** *****| Logo |***** **/
 .logo{
   position: absolute;
     top: 10px;
     z-index: 10;
+    left: 50%;
+    margin-left: -81px;
 }
 
 /*#mainSection{
@@ -63,42 +72,33 @@ body{
 	background-repeat: no-repeat;
 	background-position: center center;
 }*/
-.fadein{ 
-    position: fixed;
-    z-index: 1;
-    top: 0px;
-    width: 100%;
-    height: 1200px;
-}
-.rotator_01{
-    background: url("images/rotator01.jpg") center no-repeat;
-    background-size: cover;
-    background-attachement: fixed;
-    width: 100%;
-    height: 1200px;
-    position: relative;
-    z-index: 0;
-}
+
+/** *****| Search Field |***** **/
 #pageWrap{
     z-index: 5;
     position: relative;
     height: auto;
     width: auto;
 }
-.opportunity {
+.opportunityFinder {
     position: relative;
     margin-top: 80px;
     min-height: 200px;
 }
-#opportunityLinks p{
-    color: white;
-    position: relative;
+#opportunityLinks {
+    padding: 2%;
+}
+#searchField {
+    background-color: #459ed7;
+    border-radius: 10px;
 }
 #findOpportunity {
-    background-color: #459ed7;
-    width: 100%;
-    height: 500px;
 }
+#searchResults {
+    background-color: #FFFFFF;
+    height: auto;
+}
+/** *****| Browse Opportunities |***** **/
 .title{
     background-color: #ffffff;
     color: #459ed7;
