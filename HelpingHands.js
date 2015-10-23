@@ -33,23 +33,18 @@ if (Meteor.isClient) {
 	 };
 	 
 	Meteor.startup(function(){
-		$("#user_search").on("input", inputSearch);
-		document.getElementById("search_submit").addEventListener("click", function(){alert("click");});
-		$("#search_submit").on("click", inputSearch);
-	
-		
-		
-	  
-		
 		oldInput = "";
 		currentFilter = "name";	//1 - name, 2 - date+time, 3 - location, 4 - tag list
 		Organization = new Meteor.Collection('organization');
 		Events = new Meteor.Collection('events');
 		
 		
+		$("input[name='filter']").each(function(i, e){e.addEventListener("select", radioButtonSelect);});
+		$("#user_search").on("input", inputSearch);
+		$("#search_submit").on("click", inputSearch);
+		
 		function inputSearch() {
-			console.log("GASDJKBFLABSJKN:DNABLSHBJ:DNASIBFFK WORKS")
-			if(oldInput == $("#user_search")[0].value || $("#user_search")[0].value == "")
+			if(oldInput == $("#user_search")[0].value || $("#user_search")[0].value == "" || document.getElementById)
 				return 1;
 			
 			//Clear results
@@ -80,7 +75,6 @@ if (Meteor.isClient) {
 			oldInput = $("#user_search")[0].value;
 			return 0;
 		}
-		
 		
 		/*Processes input field and converts it to a string for the database
 		*args: none
@@ -116,6 +110,11 @@ if (Meteor.isClient) {
 			$("#search_results").appendChild(new_result);*/
 			
 			//console.log("new entry html: " + entryHTML);
+		}
+		
+		function radioButtonSelect(e) {
+			alert(e.currentTarget.value);
+			//currentFilter = e.currentTarget.value;
 		}
 		
 		populate = function() {
