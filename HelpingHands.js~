@@ -17,7 +17,7 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
-  Organization = new Meteor.Collection('organization');
+  Student = new Meteor.Collection('student');
   Meteor.startup(function () {
     // code to run on server at startup
   });

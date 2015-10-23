@@ -1,0 +1,1138 @@
+{
+   "organization":[
+      {
+         "Organization":"Academy of Music, The",
+         "Address":"P.O. Box 11146",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Access AIDS Care/LGBT Center of Hampton Roads",
+         "Address":"248 West 24th St.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Access Partnership",
+         "Address":"2515 Walmer Ave",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23513"
+      },
+      {
+         "Organization":"Alzheimer's Association",
+         "Address":"6350 Center Drive, Suite 102",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"American Diabetes Association",
+         "Address":"870 Greenbrier Circle, Suite 404",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"American Red Cross Coastal Virginia Region",
+         "Address":"611 W. Brambleton Avenue",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Animal Resources of Tidewater",
+         "Address":"P.O. Box 11535",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Armed Services YMCA of Hampton Roads",
+         "Address":"1465 Lakeside Road",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23455"
+      },
+      {
+         "Organization":"Autism Society Tidewater Virginia Chapter",
+         "Address":"6300 E. Virginia Beach Blvd.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Beach Health Clinic",
+         "Address":"3396 Holland Rd., Suite 102",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23542"
+      },
+      {
+         "Organization":"BGHH Ministries",
+         "Address":"814 Rue Marseille",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"Big Brothers Big Sisters",
+         "Address":"1707 Summit Ave., Suite 200",
+         "City":"Richmond",
+         "State":"VA",
+         "Zip":"23230"
+      },
+      {
+         "Organization":"Catholic Charities of Eastern Virginia, Inc.",
+         "Address":"5361-A Virginia Beach Blvd.",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Cerebral Palsy of Virginia",
+         "Address":"5825 Arrowhead Dr., Suite 201",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Chesapeake Care, Inc.",
+         "Address":"2145 S. Military Highway",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"Chesapeake Health Investment Program (CHIP)",
+         "Address":"1302 Jefferson Street",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23322"
+      },
+      {
+         "Organization":"Chesapeake Humane Society",
+         "Address":"312 N. Battlefield Blvd.",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"Chesapeake Service Systems",
+         "Address":"1100 Executive Blvd",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"Children's Center, The",
+         "Address":"700 Campbell Avenue",
+         "City":"Franklin",
+         "State":"VA",
+         "Zip":"23851"
+      },
+      {
+         "Organization":"Children's Hospital of the King's Daughters",
+         "Address":"601 Children's Lane",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23507"
+      },
+      {
+         "Organization":"Citizens' Committee to Protect the Elderly",
+         "Address":"P. O. Box 10100",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23450"
+      },
+      {
+         "Organization":"City of Chesapeake Department of Human Resources",
+         "Address":"301 Albemarle Dr.",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23322"
+      },
+      {
+         "Organization":"Climb for Conservation, Inc.",
+         "Address":"501 Independence Prkwy #201",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"Community Alternatives",
+         "Address":"863 Glenrock Road",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Community Builders Inc., The",
+         "Address":"1420 Merrimac Ave,",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"Communities in Schools",
+         "Address":"P.O. Box 1668",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23501"
+      },
+      {
+         "Organization":"Compassion Advocacy Network, Inc",
+         "Address":"3131 Azalea Garden Rd.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23513"
+      },
+      {
+         "Organization":"Concerned Citizens Association, Inc.",
+         "Address":"4853 Kennebeck Ave.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23513"
+      },
+      {
+         "Organization":"Cultural Alliance of Greater Hampton Roads",
+         "Address":"5200 Hampton Boulevard",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23508"
+      },
+      {
+         "Organization":"Cystic Fibrosis Foundation",
+         "Address":"P.O. Box 11047",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"d'Art Center",
+         "Address":"208 East Main Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Destination Imagination",
+         "Address":"9641 Norfolk Ave. #208",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23503"
+      },
+      {
+         "Organization":"Dolphin Scholarship Foundation",
+         "Address":"4966 Euclid Road, Suite 109",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Down Syndrome Association of Hampton Roads",
+         "Address":"6300 E. Virginia Beach Blvd.",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Eastern Virginia Medical School",
+         "Address":"721 Fairfax Avenue",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23507"
+      },
+      {
+         "Organization":"Edmarc Hospice for Children",
+         "Address":"516 London Street",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23704"
+      },
+      {
+         "Organization":"Eggleston Services",
+         "Address":"1161 Ingleside Road",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Elizabeth River Project",
+         "Address":"475 Water St.",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23704"
+      },
+      {
+         "Organization":"Family Center of Hope, The",
+         "Address":"P.O. Box 752",
+         "City":"Hayes",
+         "State":"VA",
+         "Zip":"23072"
+      },
+      {
+         "Organization":"Father's Heart Orphan Ministries",
+         "Address":"3808 Poplar Hill Road, Suite D",
+         "City":"Chesapeake",
+         "State":"va",
+         "Zip":"23321"
+      },
+      {
+         "Organization":"Fleet and Family Support Centers of Hampton Roads",
+         "Address":"4504 Relay Dr.",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23322"
+      },
+      {
+         "Organization":"Focus Center",
+         "Address":"501 West 35th Street ",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"Foodbank of Southeastern Virginia",
+         "Address":"P.O. Box 1940",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23501"
+      },
+      {
+         "Organization":"ForKids, Inc.",
+         "Address":"4200 Colley Avenue, Suite A",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23508"
+      },
+      {
+         "Organization":"Fort Monroe Authority",
+         "Address":"151 Bernard Rd.",
+         "City":"Fort Monroe",
+         "State":"VA",
+         "Zip":"23651"
+      },
+      {
+         "Organization":"FREE Foundation of South Hampton Roads",
+         "Address":"828 Healthy Way",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Friends of Portsmouth Juvenile Court, Inc.",
+         "Address":"1345 Court St.",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23705"
+      },
+      {
+         "Organization":"Garden of Hope, The",
+         "Address":"1317 Brambleton Ave.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"Genieve Shelter, The",
+         "Address":"157 N. Main St., Suite R3",
+         "City":"Suffolk",
+         "State":"VA",
+         "Zip":"23434"
+      },
+      {
+         "Organization":"Ghent Area Ministry",
+         "Address":"1301 Colonial Avenue",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Ghent Bar Tours",
+         "Address":"520 W 21st St. #G2-151",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Girls on the Run South Hampton Roads",
+         "Address":"921 First Colonial Rd. Suite 1707",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23454"
+      },
+      {
+         "Organization":"Girl Scout Council of Colonial Coast",
+         "Address":"912 Cedar Road",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23322"
+      },
+      {
+         "Organization":"Goodwill Industries",
+         "Address":"1345 Diamond Springs Road",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23455"
+      },
+      {
+         "Organization":"Hampton Roads Center for Civic Engagement",
+         "Address":"50 W. Queens Way, Suite 100",
+         "City":"Hampton",
+         "State":"VA",
+         "Zip":"23664"
+      },
+      {
+         "Organization":"Hampton Roads Chamber of Commerce",
+         "Address":"500 E. Main Street, Suite 700",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Hampton Roads Community Foundation",
+         "Address":"101 West Main Street, Suite 4500",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Hampton Roads Pride",
+         "Address":"P.O. Box 41082",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23541"
+      },
+      {
+         "Organization":"Hearts and Homes dba Biznet, Inc.",
+         "Address":"P.O. Box 61657",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23456"
+      },
+      {
+         "Organization":"Help & Emergency Response, Inc.",
+         "Address":"P.O. Box 2187",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23702"
+      },
+      {
+         "Organization":"Hermitage Museum & Gardens, The",
+         "Address":"7637 North Shore Road",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23505"
+      },
+      {
+         "Organization":"Hoffler Creek Wildlife Foundation",
+         "Address":"4510 Twin Pines Road",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23703"
+      },
+      {
+         "Organization":"Hope House Foundation",
+         "Address":"801 Boush Street, Suite 302",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Hurrah Players, Inc., The",
+         "Address":"485 St. Paul's Boulevard",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Ida Barbour Early Learning Center",
+         "Address":"1400 Camden Ave.",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23704"
+      },
+      {
+         "Organization":"Isle of Wight Christian Outreach Program",
+         "Address":"P.O. Box 253",
+         "City":"Smithfield ",
+         "State":"VA",
+         "Zip":"23431"
+      },
+      {
+         "Organization":"Judeo-Christian Outreach Center",
+         "Address":"1053 Virginia Beach Boulevard",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23451"
+      },
+      {
+         "Organization":"Jumping Hurdles, Inc.",
+         "Address":"417 W. 20th St. #11598",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Junior Achievement of Greater Hampton Roads, Inc.",
+         "Address":"6387 Center Drive, Bldg 2, Suite 3",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Junior League of Norfolk-Virginia Beach, The",
+         "Address":"227 West Freemason Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Juvenile Diabetes Research Foundation, Hampton Roads Chapter",
+         "Address":"291 Independence Boulevard, Bldg 4, Suite 517",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Keep Norfolk Beautiful",
+         "Address":"3500-A Granby Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"King's Daughters, The",
+         "Address":"601 Children Lane, 2nd Floor",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23507"
+      },
+      {
+         "Organization":"Lee's Friends",
+         "Address":"7400 Hampton Boulevard",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23505"
+      },
+      {
+         "Organization":"LifeNet Health",
+         "Address":"1864 Concert Drive",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23453"
+      },
+      {
+         "Organization":"Make-A-Wish Foundation of Greater Virginia",
+         "Address":"2810 N. Parham Rd., Suite 302",
+         "City":"Richmond",
+         "State":"VA",
+         "Zip":"23294"
+      },
+      {
+         "Organization":"M. E. Cox Center for Elder Day Care",
+         "Address":"644 N. Lynnhaven Road",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23452"
+      },
+      {
+         "Organization":"Mea'Alofa Autism Support Center",
+         "Address":"4016 Raintree Road, Suite 220B",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23321"
+      },
+      {
+         "Organization":"Meals of Wheels Chesapeake",
+         "Address":"P.O. Box 15343",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23328"
+      },
+      {
+         "Organization":"Meals of Wheels Portsmouth",
+         "Address":"4201 Greenwood Dr.",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23701"
+      },
+      {
+         "Organization":"Mercy Chefs ,Inc.",
+         "Address":"9 Early Drive",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23701"
+      },
+      {
+         "Organization":"Mercy Medical Angels",
+         "Address":"4620 Haygood Road, Suite 1",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23455"
+      },
+      {
+         "Organization":"Muse Writers Center, The",
+         "Address":"816-A Orapax Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23507"
+      },
+      {
+         "Organization":"National Multiple Sclerosis Society - Hampton Roads Chapter",
+         "Address":"4200 Innslake Dr. Suite 301",
+         "City":"Glen Allen",
+         "State":"VA",
+         "Zip":"23060"
+      },
+      {
+         "Organization":"Newport News Court Appointed Special Advocates",
+         "Address":"230 25th Street",
+         "City":"Newport News",
+         "State":"VA",
+         "Zip":"23607"
+      },
+      {
+         "Organization":"Noblemen, The",
+         "Address":"2681 Production Rd. Suite 105",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23454"
+      },
+      {
+         "Organization":"Norfolk Botanical Garden Society Inc.",
+         "Address":"6700 Azalea Garden Road",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23518"
+      },
+      {
+         "Organization":"Norfolk Chamber Consort",
+         "Address":"P.O. Box 11031",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Norfolk NATO Festival",
+         "Address":"440 Bank Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Norfolk Public Library",
+         "Address":"1155 Pineridge Road",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Norfolk Senior Center t/a Primeplus",
+         "Address":"7300 Newport Avenue, Suite 100",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23505"
+      },
+      {
+         "Organization":"Norfolk SPCA",
+         "Address":"916 Ballentine Boulevard",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"Norfolk Society for Cemetary Conservation",
+         "Address":"P.O. Box 3584",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23514"
+      },
+      {
+         "Organization":"Oakmont Community Development Corp.",
+         "Address":"7010 Auburn Avenue, Suite M",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23513"
+      },
+      {
+         "Organization":"Obici Healthcare Foundation",
+         "Address":"106 W. Finney Avenue",
+         "City":"Suffolk",
+         "State":"VA",
+         "Zip":"23434"
+      },
+      {
+         "Organization":"Operation Blessing International: US Disaster Relief",
+         "Address":"977 Centerville Turnpike, CSB 330",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23463"
+      },
+      {
+         "Organization":"Operation Smile",
+         "Address":"3641 Faculty Blvd",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23453"
+      },
+      {
+         "Organization":"Peninsula Community Foundation",
+         "Address":"11742 Jefferson Ave., Suite 350",
+         "City":"Newport News",
+         "State":"VA",
+         "Zip":"23606"
+      },
+      {
+         "Organization":"Peninsula Metropolitan YMCA",
+         "Address":"101 Long Green Boulevard",
+         "City":"Yorktown",
+         "State":"VA",
+         "Zip":"23693"
+      },
+      {
+         "Organization":"People for the Ethical Treatment of Animals (PETA)",
+         "Address":"501 Front St.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Portsmouth Area Resources Coalition, Inc. (PARC)",
+         "Address":"P.O. Box 1183",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23705"
+      },
+      {
+         "Organization":"Portsmouth Community Health Center, Inc. d/b/a Hampton Roads Community Health Center",
+         "Address":"664 Lincoln Street",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23704"
+      },
+      {
+         "Organization":"Portsmouth Museums",
+         "Address":"521 Middle Street",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23704"
+      },
+      {
+         "Organization":"Project Lifesaver International",
+         "Address":"815 Battlefield Boulevard South",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23322"
+      },
+      {
+         "Organization":"R.E.A.C.H., Inc./Mission of the Holy Spirit",
+         "Address":"1445 Norview Avenue",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23513"
+      },
+      {
+         "Organization":"Rainbows Hampton Roads",
+         "Address":"201 Stadium Drive",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23323"
+      },
+      {
+         "Organization":"Reading Enriches All Children (REACH)",
+         "Address":"809 Brandon Avenue, Suite 208",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Roc Solid Foundation, Inc.",
+         "Address":"2628 Norris Lane",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23321"
+      },
+      {
+         "Organization":"Saint Mary's Home for Disabled Children",
+         "Address":"6171 Kempsville Circle",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Salvation Army Tidewater Area Command, The",
+         "Address":"5525 Raby Road",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Samaritan House",
+         "Address":"P.O. Box 2400, #226",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23450"
+      },
+      {
+         "Organization":"Sarah Bonwell Hudgins Foundation Inc.",
+         "Address":"1 Singleton Dr.",
+         "City":"Hampton",
+         "State":"VA",
+         "Zip":"23666"
+      },
+      {
+         "Organization":"Senior Services of Southeastern Virginia",
+         "Address":"6350 Center Drive, Building 5, Suite 101",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Sentara Home Care Services Hospice Program",
+         "Address":"535 Independence Parkway, Suite 200",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23320"
+      },
+      {
+         "Organization":"Seton Youth Shelters",
+         "Address":"3333 Virginia Beach Boulevard, Suite 28",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23452"
+      },
+      {
+         "Organization":"S.M.I.L.E",
+         "Address":"101 West Main Street, Suite 7000",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"SOAR Education",
+         "Address":"3241 Braddock Landing Rd.",
+         "City":"Chesapeake",
+         "State":"VA",
+         "Zip":"23321"
+      },
+      {
+         "Organization":"Southeast Virginia Community Foundation",
+         "Address":"5800 High Street West",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23703"
+      },
+      {
+         "Organization":"Southside Boys & Girls Club",
+         "Address":"701 Berkley Avenue Ext                                        ",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23523"
+      },
+      {
+         "Organization":"STARBASE Victory",
+         "Address":"P.O. Box 906",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23705"
+      },
+      {
+         "Organization":"Special Olympics Virginia",
+         "Address":"3212 Skipwith Road, Suite 100",
+         "City":"Richmond",
+         "State":"VA",
+         "Zip":"23294"
+      },
+      {
+         "Organization":"Suffolk Meals on Wheels",
+         "Address":"P.O. Box 1545",
+         "City":"Suffolk",
+         "State":"VA",
+         "Zip":"23439"
+      },
+      {
+         "Organization":"Suffolk Partnership for  a Healthy Community",
+         "Address":"1707 N. Main St.",
+         "City":"Suffolk",
+         "State":"VA",
+         "Zip":"23434"
+      },
+      {
+         "Organization":"Susan G. Komen Tidewater Affiliate",
+         "Address":"5295 Greenwich Road, Suite 105",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Teens With a Purpose",
+         "Address":"645 Church Street, Suite 304",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Tidewater Arts Outreach",
+         "Address":"809 Brandon Avenue, Suite 300",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Tidewater Youth Services Foundation",
+         "Address":"2404 Airline Boulevard",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23701"
+      },
+      {
+         "Organization":"Toby's Dream Foundation",
+         "Address":"283 Constitution Drive, Suite 900",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Together We Can Foundation",
+         "Address":"5101 Cleveland Street, Suite 305",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23462"
+      },
+      {
+         "Organization":"Union Mission Ministries",
+         "Address":"5100 E. Virginia Beach Boulevard",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"United Way of South Hampton Roads",
+         "Address":"P.O. Box 41069",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23514"
+      },
+      {
+         "Organization":"Up Center, The",
+         "Address":"150 Boush St.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"USO of Hampton Roads and Central Virginia",
+         "Address":"P.O. Box 7250",
+         "City":"Hampton",
+         "State":"VA",
+         "Zip":"23666"
+      },
+      {
+         "Organization":"Vanguard Landing",
+         "Address":"2133 Upton Dr. Suite 125, Box 272",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23454"
+      },
+      {
+         "Organization":"Versability Resources, Inc.",
+         "Address":"2520 58th St.",
+         "City":"Hampton",
+         "State":"VA",
+         "Zip":"23661"
+      },
+      {
+         "Organization":"Virginia Aquarium & Marine Science Center",
+         "Address":"717 General Booth Boulevard",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23451"
+      },
+      {
+         "Organization":"Virginia Beach Community Development Corp.",
+         "Address":"2400 Potters Road",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23454"
+      },
+      {
+         "Organization":"Virginia Beach Court Appointed Special Advocates, Inc. (CASA)",
+         "Address":"J & DRC, 2425 Nimmo Parkway",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23456"
+      },
+      {
+         "Organization":"Virginia Beach Education Foundation",
+         "Address":"2512 George Mason Dr.",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23456"
+      },
+      {
+         "Organization":"Virginia Beach EMS",
+         "Address":"477 Viking Drive, Suite 130",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23452"
+      },
+      {
+         "Organization":"Virginia Beach GrowSmart",
+         "Address":"4525 Main St., Suite 700",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23456"
+      },
+      {
+         "Organization":"Virginia Beach Rescue Squad Foundation",
+         "Address":"740 Virginia Beach Boulevard",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23451"
+      },
+      {
+         "Organization":"Virginia Beach SPCA",
+         "Address":"3040 Holland Road",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23453"
+      },
+      {
+         "Organization":"Virginia Children's Chorus",
+         "Address":"P.O. Box 11679",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Virginia Living Museum",
+         "Address":"524 J. Clyde Morris Boulevard",
+         "City":"Newport News",
+         "State":"VA",
+         "Zip":"23601"
+      },
+      {
+         "Organization":"Virginia Supportive Housing Authority",
+         "Address":"431 West 24th Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"Virginia Zoological Society",
+         "Address":"3500 Granby Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"VisitNorfolk",
+         "Address":"232 E. Main Street",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23510"
+      },
+      {
+         "Organization":"Voices for Kids CASA Program of Southeast Virginia",
+         "Address":"P.O. Box 80",
+         "City":"Isle of Wright",
+         "State":"VA",
+         "Zip":"23397"
+      },
+      {
+         "Organization":"Western Tidewater Free Clinic",
+         "Address":"2019 Meade Parkway",
+         "City":"Suffolk",
+         "State":"VA",
+         "Zip":"23434"
+      },
+      {
+         "Organization":"Wesley Community Service Center",
+         "Address":"1701 Elm Ave./ P.O. Box 1396",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23705"
+      },
+      {
+         "Organization":"Williams A. Hunton Family YMCA",
+         "Address":"1139 E. Charlotte St.",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23504"
+      },
+      {
+         "Organization":"Williams School, The",
+         "Address":"419 Colonial Avenue",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23507"
+      },
+      {
+         "Organization":"YMCA of Portsmouth",
+         "Address":"4900 High Street West",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23703"
+      },
+      {
+         "Organization":"Young Audiences of Virginia, Inc.",
+         "Address":"420 North Center Drive, Suite 239",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23502"
+      },
+      {
+         "Organization":"Youth Outreach Urban Resources and Services",
+         "Address":"P.O. Box 2536",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23501"
+      },
+      {
+         "Organization":"Norfolk Sertoma Club",
+         "Address":"P.O. Box 11331",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23517"
+      },
+      {
+         "Organization":"VOLUNTEER Hampton Roads",
+         "Address":"400 West Olney Road, Suite B",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23507"
+      },
+      {
+         "Organization":"Feldman Chamber Music Society",
+         "Address":"P.O. Box 6144",
+         "City":"Norfolk",
+         "State":"VA",
+         "Zip":"23508"
+      },
+      {
+         "Organization":"Community Outreach Coalition",
+         "Address":"901 Duce St.",
+         "City":"Portsmouth",
+         "State":"VA",
+         "Zip":"23701"
+      },
+      {
+         "Organization":"Walk In It Inc.",
+         "Address":"P.O. Box 1447",
+         "City":"Suffolk",
+         "State":"VA",
+         "Zip":"23664"
+      },
+      {
+         "Organization":"Virginia Beach Project Lifesaver",
+         "Address":"2509 Princess Anne Rd., Building 15",
+         "City":"Virginia Beach",
+         "State":"VA",
+         "Zip":"23456"
+      }
+   ]
+}
