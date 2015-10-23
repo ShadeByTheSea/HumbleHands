@@ -1,5 +1,6 @@
 if ( Meteor.users.find().count() === 0 ) {
     Accounts.createUser({
+	_id : "bbca5d6a-2156-41c4-89da-0329e8c99a4f",
         username: 'organizer1',
         email: 'shade.mslt@gmail.com',
         password: 'test',
@@ -13,6 +14,7 @@ if ( Meteor.users.find().count() === 0 ) {
 
 if ( Meteor.users.find().count() === 1 ) {
     Accounts.createUser({
+        _id : "bbca5d6a-2156-41c4-89da-0329e8c99a4e",
         username: 'organizer2',
         email: 'kennethecrim@gmail.com',
         password: 'test',
@@ -26,6 +28,7 @@ if ( Meteor.users.find().count() === 1 ) {
 
 if ( Meteor.users.find().count() === 2 ) {
     Accounts.createUser({
+	_id : "bbca5d6a-2156-41c4-89da-0f29f8cf9a4f",
         username: 'volunteer',
         email: 'wilshawn416@verizon.net',
         password: 'test',
