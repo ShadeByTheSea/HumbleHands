@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 	oldInput = "";
 	currentFilter = "name";	//1 - name, 2 - date+time, 3 - location, 4 - tag list
 	Organization = new Meteor.Collection('organization');
-	document.getElementById("input").addEventListener("input", handleInput);
+	document.getElementById("user_search").addEventListener("input", handleInput);
 	
 	function handleInput(e) {
 		if(oldInput != e.currentTarget.text) {
@@ -11,8 +11,7 @@ if (Meteor.isClient) {
 					var searchObj = {organization:e.currentTarget.text}
 					break;
 				case "date":
-					getUserDate();
-					var searchObj = {date:e.currentTarget.text}
+					var searchObj = {date:getUserDate()}
 					break;
 				case "location":
 					var searchObj = {location:e.currentTarget.text}
@@ -22,11 +21,23 @@ if (Meteor.isClient) {
 					break;
 			}
 			var results = Organization.find(searchObj).fetch();
+			insertEvents(results);
 		}
 	}
+	
+	/*Processes input field and converts it to a string for the database
+	*args: none
+	*return: string for database search*/
 	function getUserDate() {
 		var udate = document.getElementById("date").text;
 		var utime = document.getElementById("time").text;
+	}
+	
+	/*takes a set of events and shows them in the results field
+	*args: array of events
+	*return: none*/
+	function insertEvents(eventSet) {
+		
 	}
 }
 
