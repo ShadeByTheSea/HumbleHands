@@ -1,1 +1,44 @@
 /* CSS declarations go here */
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#navigation{
+    background-color: #b2bd00;
+    padding: 5px;
+}
+#navigationLinks{
+    float: left;
+}
+#navigationLinks ul li{
+    display: inline-block;
+    list-style: none;
+    color: #ffffff;
+    padding: 0px 5px;
+}
+#navigationLinks a{
+    border-right: 1px solid #ffffff;
+}
+#navigationLinks ul li:last-child{
+    border-right: 0px solid #ffffff;
+}
+#accountLinks{
+    float: right;
+}
+#accountLinks ul li{
+    display: inline-block;
+    list-style: none;
+    color: #ffffff;
+    padding: 0px 5px;
+}
+#accountLinks a{
+    border-right: 1px solid #ffffff;
+}
+#accountLinks ul li:last-child{
+    border-right: 0px solid #ffffff;
+}
+
+.spacer{
+    clear: both;
+}
