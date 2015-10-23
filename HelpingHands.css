@@ -44,3 +44,27 @@ body{
 }
 .logo{
 }
+
+.green-topper {
+  background-image: url(images/green-topper.png);
+  height: 46px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#green-section {
+  background-color: #b2bd00;
+}
+
+#footer {
+  background-image: url(images/footer.png);
+  height: 200px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.no-padding {
+  padding: 0;
+}
