@@ -11,6 +11,7 @@ Router.route('/createEvent', {
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
     Events = new Meteor.Collection('events');
+	var rendered = false;
 	Meteor.startup(function () {
 		// code to run on server at startup
 	});
@@ -43,7 +44,10 @@ if (Meteor.isClient) {
 		$('.lm-social-share-pinterest').html(icon);
 	 };
 	 
-	Meteor.startup(function(){
+	 
+	Template.index.rendered = function(){
+		if(rendered) return;
+		rendered = true;
 		currentFilter = "event";	//1 - event, 2 - organization, 3 - location, 4 - tag list
 		Organization = new Meteor.Collection('organization');
 		Events = new Meteor.Collection('events');
@@ -75,7 +79,7 @@ if (Meteor.isClient) {
 					var searchObj = {tags:{ $in: regexarr }}
 					break;
 			}
-			var results = Events.find(searchObj, {sort: {date:1}}).fetch();
+			var results = Events.find(searchObj, {sort: {startDate:1}}).fetch();
 			if(typeof results == "undefined" || results == null || results.length <= 0) {
 				$("#search_results")[0].innerHTML = "<h3>No Results!</h3>";
 			} else {
@@ -102,7 +106,6 @@ if (Meteor.isClient) {
 			"<span name=\"date\">"+evt_date.toDateString()+"</span>"+
 			"<span name=\"organization\">"+evt_org+"</span>"+
 			"</div><br/>";
-			console.log("new row: " + entryHTML);
 			$("#search_results")[0].innerHTML += entryHTML;
 			
 			//console.log("new entry html: " + entryHTML);
@@ -123,7 +126,7 @@ if (Meteor.isClient) {
 			tmp_result.forEach(insertEventResult);
 		}
 	
-	})
+	};
 }
 
 
