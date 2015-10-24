@@ -1,0 +1,163 @@
+
+<template name="eventDetails">
+
+  <!-- *****| Background Image |***** -->
+  <div class="fadein">
+    <div class="rotator_01"></div>
+    <!--<div class="rotator_02"></div>-->
+  </div>
+  
+  <!-- *****| Page Wrap |***** -->
+  <div id="pageWrap">
+    
+      <!-- *****| Navigation |***** -->
+    <div class="container-fluid hidden-xs visibile-sm visible-md visible-lg">
+      <div id="navigation">
+        <div class="container">
+          <div id="navigationLinks" class="col-md-6">
+            <ul>
+              <li><a href="#">Volunteer</a></li>
+              <li>|</li>
+              <li><a href="#">Find a Volunteer</a></li>
+              <li>|</li>
+              <li><a href="#">Explore the Causes</a></li>
+            </ul>
+            <div class="spacer"></div>
+          </div>
+          <!-- *****| Account Links |***** -->
+          <div id="accountLinks" class="col-md-6 text-right">
+            <ul>
+              <li>{{> loginButtons}}</li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- *****| Logo Section |***** -->
+    <div class="row">
+        <div class="container">
+          <div class="col-md-2 col-md-offset-5 logo">
+              <img  src="images/logo.png" alt="humble hands logo" />
+          </div>
+        </div>
+    </div>
+    <!-- *****| Mobile Navigation |***** -->
+  
+	<div class="row mobile_nav">
+      <div class="container-fluid visible-xs hidden-sm hidden-md hidden-lg">
+        <div class="col-xs-6 col-xs-offset-3 text-center">
+          <div class="link_mobile">
+            <ul class="list-unstyled">
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Find Volunteers</a></li>
+              <li><a href="#">Explore the Causes</a></li>
+            </ul>
+          </div>
+          <div class="login_mobile">
+            {{> loginButtons}}
+          </div>
+          <div class="account_mobile">
+            <a href="#"><span>My Account</span></a>
+          </div>
+        </div>
+      </div>  
+    </div>
+	
+    <!-- *****| Page Title |***** -->
+    <div class="row">
+      <div class="container">
+        <div class="pagetitle col-md-10 col-md-offset-1 text-center">
+          <h1>Find Your Opportunity</h1>
+        </div>
+      </div>
+    </div>
+ 
+   <!-- *****| Content |***** -->
+   <div class="row" id="content-wrap">
+     <div class="container-fluid col-md-12 no-padding">
+     <div class="white-topper"></div>
+        <div id="white-section">
+        <div class="row">
+          <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+              <div id="description">
+              <span class="event">Book Sorting</span>
+              <span class="org">The UP Center</span>
+              <span class="desc">Join us as we sort through book donations. Bookstore proceeds go to fund early childhoold development programs.</span>
+              <span class="freq">Every Wednesday</span>
+              <span class="vols">6 volunteers needed</span>
+              <span class="fa fa-check-square-o"></span><span class="tag">poverty</span><br />
+              <span class="fa fa-check-square-o"></span><span class="tag">education</span><br />
+              <span class="fa fa-check-square-o"></span><span class="tag">children</span>
+              </div>
+              <div id="details">
+              <span class="location-name">Up Center Books</span>
+              <span class="address">1011 W 25th St<br />
+              Norfolk, VA 23517</span>
+              <span class="phone">(757) 623-1119</span>
+              <span class="date">Saturday<br />
+              Oct. 24, 2015</span>
+              <span class="time">9:00am - 3:00pm</span>
+              <img src="images/map.jpg" alt="Location">
+              </div>
+              <div class="spacer"></div>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div id="signup-btn">
+                <span>Sign me up!</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div class="col-md-8 col-md-offset-2">
+                <a href="#"><span class="back-to">Back to Search Results >></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+    
+    <!-- *****| Quote / Stat Section |***** -->
+    <div class="row" id="quoteSection">
+      <div class="container-fluid col-md-12 no-padding">
+        <div id="green-section">
+          <div class="container text-center">
+            <div class="col-md-6 col-md-offset-3">
+              <span class="quote">"Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it’s the only thing that ever has."</span><br>
+              <span class="quoteName">-Margaret Mead</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+ <!-- *****| Footer |***** -->
+  <div id="footer" class="row">
+    <div class="container-fluid col-xs-12" id="footer">
+      <div class="footer_wrap">
+        <div class="links col-md-4">
+          
+        </div>
+        <div class="social col-md-4 text-center">
+          <span>Follow Us!</span>
+          {{> socialShareBasic}}
+        </div>
+        <div class="legal col-md-4">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+</div><!-- End pageWrap -->
+</template>
+

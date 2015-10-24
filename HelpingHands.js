@@ -7,6 +7,9 @@ Router.route('/inner', {
 Router.route('/createEvent', {
     template: 'createEvent'
 });
+Router.route('/eventDetails', {
+    template: 'eventDetails'
+});
 
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
@@ -94,7 +97,7 @@ if (Meteor.isClient) {
 		*return: none*/
 		function insertEventResult(entry, index, arr) {
 			var evt_name = entry.name,
-			evt_date = new Date(entry.date),
+			evt_date = new Date(entry.startDate),
 			evt_city = entry.city,
 			evt_state = entry.state,
 			evt_org = entry.organization;
@@ -128,33 +131,41 @@ if (Meteor.isClient) {
 		$("table div:last-of-type").on("click", submitClick);
 		
 		function submitClick(e) {
-			var org_name = $("#organizationName"),
 			//form_date = new Date($("#date").val()),
 			//form_date = new Date(document.getElementById("date").value),
-			volunteers = ;
+			
+			console.log("textfield: " + $('#date').val());
+			var input_date = Date.parse($('#date').val());
+			console.log("after parse: " + input_date);
+			var myDate = new Date(input_date);
+			var start_date = myDate.getTime() + $("#startTime");
 			
 			var tag_list = new Array();
-			$("input[name='filterCheck']").forEach(function(i, e){
-				if(e.attr("checked"))
+			$("input[name='filterCheck']").each(function(i, e){
+				if(e.checked)
 					tag_list.push(e.value);
 			});
 			
-			newEvt = {
-				"name": $("#eventName"),
-				"organization": $("#organizationName"),
-				"description": $("#eventDescription").value,
-				"createtime": asdf,
-				"startDate": asdf,
-				"endDate": asdf,
-				"volunteer": $("#numberOfVolunteers").value,
-				"address": $("#locationAddress").value,
-				"city": $("#city").value,
-				"state": $("#").value,
-				"zip": $("#zip").value,
+			console.log("startDate: " + myDate.toDateString() + " " + $("#startTime").val())
+			console.log("endDate: " + myDate.toDateString() + " " + $("#endTime").val())
+			
+			var newEvt = {
+				"name": $("#eventName").val(),
+				"organization": $("#organizationName").val(),
+				"description": $("#eventDescription").val(),
+				"createtime": Date.now(),
+				"startDate": Date.parse(myDate.toDateString() + " " + $("#startTime").val()),
+				"endDate": Date.parse(myDate.toDateString() + " " + $("#endTime").val()),
+				"volunteer": $("#numberOfVolunteers").val(),
+				"address": $("#locationAddress").val(),
+				"city": $("#city").val(),
+				"state": $("#").val(),
+				"zip": $("#zip").val(),
 				"tags": tag_list,
-				"signups": asdf,
-				"organizers": asdf
+				"signups": "",
+				"organizers": ""
 			};
+			insertEvent(newEvt);
 		}
 		
 		function insertEvent(obj) {
