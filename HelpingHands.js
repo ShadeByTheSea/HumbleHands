@@ -59,7 +59,8 @@ if (Meteor.isClient) {
 					var searchObj = {city: new RegExp($("#user_search")[0].value, 'i') }
 					break;
 				case "tag list":
-					var searchObj = {tags:{ $in: [ $("#user_search")[0].value.replace(' ', ',') ] }}
+					//var searchObj = {tags:{ $in: [ $("#user_search")[0].value.replace(' ', ',') ] }}
+					var searchObj = {tags:{ $in: $("#user_search")[0].value.split(' ') }}
 					break;
 			}
 			var results = Events.find(searchObj).fetch();
