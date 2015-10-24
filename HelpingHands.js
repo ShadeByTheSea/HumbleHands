@@ -136,7 +136,7 @@ if (Meteor.isClient) {
 			var start_date = myDate.getTime() + $("#startTime");
 			
 			var tag_list = new Array();
-			$("input[name='filterCheck']").forEach(function(i, e){
+			$("input[name='filterCheck']").each(function(i, e){
 				if(e.attr("checked"))
 					tag_list.push(e.value);
 			});
