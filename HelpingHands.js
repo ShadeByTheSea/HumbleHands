@@ -141,16 +141,16 @@ if (Meteor.isClient) {
 					tag_list.push(e.value);
 			});
 			
-			console.log("startDate: " + MyDate.toDateString() + " " + $("#startTime").val())
-			console.log("endDate: " + MyDate.toDateString() + " " + $("#endTime").val())
+			console.log("startDate: " + myDate.toDateString() + " " + $("#startTime").val())
+			console.log("endDate: " + myDate.toDateString() + " " + $("#endTime").val())
 			
 			var newEvt = {
 				"name": $("#eventName"),
 				"organization": $("#organizationName").val(),
 				"description": $("#eventDescription").val(),
 				"createtime": Date.now(),
-				"startDate": Date.parse(MyDate.toDateString() + " " + $("#startTime").val()),
-				"endDate": Date.parse(MyDate.toDateString() + " " + $("#endTime").val()),
+				"startDate": Date.parse(myDate.toDateString() + " " + $("#startTime").val()),
+				"endDate": Date.parse(myDate.toDateString() + " " + $("#endTime").val()),
 				"volunteer": $("#numberOfVolunteers").val(),
 				"address": $("#locationAddress").val(),
 				"city": $("#city").val(),
