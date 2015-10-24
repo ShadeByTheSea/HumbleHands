@@ -1,0 +1,277 @@
+/* CSS declarations go here */
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/** *****| Image Rotation |***** **/
+.fadein { 
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    height: 1200px;
+}
+.rotator_01 {
+    background: url("images/rotator01.jpg") center no-repeat;
+    background-size: cover;
+    background-attachement: fixed;
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    z-index: 0;
+}
+
+/** *****| Header |***** **/
+#navigation {
+    position: relative;
+    background-color: #b2bd00;
+    height: 50px;
+}
+#navigationLinks ul li {
+    position: relative;
+    float: left;
+    top: 13px;
+    margin: 0 5px;
+    list-style: none;
+    color: #ffffff;
+}
+#navigationLinks ul li a {
+    color: #FFFFFF;
+}
+#accountLinks ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    color: #ffffff;
+    margin: 0px 5px;
+    top: 13px;
+}
+#accountLinks ul li a {
+    color: #222222;
+}
+.accounts-dialog {
+    color: black !important;
+}
+
+/** *****| Logo |***** **/
+.logo {
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+    left: 50%;
+    margin-left: -81px;
+}
+
+/** *****| Tag Line |***** **/
+.tagline {
+    position: relative;
+    margin-top: 95px;
+}
+.tagline span {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+/** *****| Search Field |***** **/
+#pageWrap{
+    z-index: 5;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.opportunityFinder {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+#opportunityLinks {
+    padding: 2%;
+}
+#searchField {
+    background-color: #459ed7;
+    border-radius: 10px;
+}
+#filter_select span {
+    position: relative;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 16px;
+}
+#filter_select input {
+    margin-right: 5px;
+}
+#searchResults {
+    color: #FFFFFF;
+    height: auto;
+}
+#search{
+	height:26px;
+	clear:both;
+}
+#user_search{
+	float:left;	
+}
+#search_submit{
+	float:left;
+	height:100%;
+	width:26px;
+	background-color:#b2bd00;
+	line-height:26px;
+	cursor:pointer;
+}
+#search_submit i {
+	width:100%;
+	height:100%;
+	line-height:100%;
+	text-align:center;
+}
+
+/** *****| Browse Opportunities |***** **/
+.title {
+    margin-top: 20px;
+    background-color: #FFF;
+    color: #459ed7;
+    font-weight: bold;
+    font-size: 2em;
+}
+#browseOpportunities {
+    background-color: #ffffff;
+    padding: 10px 0px;
+}
+.paw-blue {
+    position: relative;
+    margin: 0 auto;
+    background-color: #459ed7;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-green {
+    position: relative;
+    margin: 0 auto;
+    background-color: #b2bd00;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-orange {
+    position: relative;
+    margin: 0 auto;
+    background-color: #bd7433;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-blue i, .paw-green i, .paw-orange i {
+    color: white;
+    font-size: 24px;
+    position: relative;
+}
+.paw-blue .fa-paw,
+.paw-green .fa-child,
+.paw-blue .fa-medkit {
+    position: relative;
+    top: 10px;
+}
+.paw-orange .fa-futbol-o,
+.paw-green .fa-recycle,
+.paw-orange .fa-heart {
+    position: relative;
+    top: 12px;
+}
+.browseText {
+    position: relative;
+    mergin-top: 10px;
+}
+
+/** *****| Quote |***** **/
+.green-topper {
+  background-image: url(images/green-topper.png);
+  height: 46px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#quoteSection{
+    background-color: #ffffff;
+}
+#green-section {
+  background-color: #b2bd00;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.quote {
+    background-color: inherit;
+    font-size: 2.5em;
+}
+.quoteName {
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 2em;
+}
+
+/** *****| Hashtags |***** **/
+#socialShare {
+    background-color: #FFFFFF;
+}
+.hashtag_title {
+    margin-top: 10px;
+}
+.hashtag_title span {
+    font-size: 2em;
+    font-style: italic;
+}
+.hashtags {
+    min-height: 100px;
+}
+/** *****| Footer |***** **/
+#footer {
+    background-color: #FFFFFF;
+    background-image: url(images/footer.png);
+    height: 200px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.footer_wrap {
+    margin-top: 40px;
+}
+.social span {
+    color: #FFF;
+    font-size: 1.3em;
+}
+.socialBubble {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: #FFF;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.socialBubble i {
+    position: relative;
+    top: 12px;
+    font-size: 24px;
+    
+}
+.socialBubble:hover {
+    background-color: #459ed7;
+}
+.no-padding {
+  padding: 0;
+}
+
+#filter_select span{
+	display:block;
+}
+
+.lm-social-share-btn{
+	display:inline-block
+}
