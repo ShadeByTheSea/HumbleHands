@@ -94,7 +94,7 @@ if (Meteor.isClient) {
 		*return: none*/
 		function insertEventResult(entry, index, arr) {
 			var evt_name = entry.name,
-			evt_date = new Date(entry.date),
+			evt_date = new Date(entry.startDate),
 			evt_city = entry.city,
 			evt_state = entry.state,
 			evt_org = entry.organization;
@@ -131,6 +131,10 @@ if (Meteor.isClient) {
 			//form_date = new Date($("#date").val()),
 			//form_date = new Date(document.getElementById("date").value),
 			
+			var input_date = $('#scheduleDate').val();
+			var myDate = new Date(input_date);
+			var start_date = myDate.getTime() + $("#startTime");
+			
 			var tag_list = new Array();
 			$("input[name='filterCheck']").forEach(function(i, e){
 				if(e.attr("checked"))
@@ -141,17 +145,17 @@ if (Meteor.isClient) {
 				"name": $("#eventName"),
 				"organization": $("#organizationName"),
 				"description": $("#eventDescription").value,
-				"createtime": asdf,
-				"startDate": asdf,
-				"endDate": asdf,
+				"createtime": Date.now(),
+				"startDate": Date.parse(input_date + " " + $("#startTime").val()),
+				"endDate": Date.parse(input_date + " " + $("#endTime").val()),
 				"volunteer": $("#numberOfVolunteers").value,
 				"address": $("#locationAddress").value,
 				"city": $("#city").value,
 				"state": $("#").value,
 				"zip": $("#zip").value,
 				"tags": tag_list,
-				"signups": asdf,
-				"organizers": asdf
+				"signups": "",
+				"organizers": ""
 			};
 			insertEvent(newEvt);
 		}
