@@ -67,6 +67,30 @@
             "organizers":[
                 "organizer2"
             ]
-        }
+        },
+      {
+        "name":"Book Sorting",
+        "organization":"The Up Center",
+        "description":"Join us as we sort through book donations. Bookstore proceeds go to fund early childhoold development programs.",
+        "createtime":1445616613000,
+        "startDate":1445691600000,
+        "endDate":1445713200000,
+        "volunteer":20,
+        "address":"1011 W 25th St",
+        "city":"Norfolk",
+        "state":"VA",
+        "zip":23517,
+        "tags":[
+          "poverty",
+          "education",
+          "children"
+        ],
+        "signups":[
+          "volunteer"
+        ],
+        "organizers":[
+          "organizer2"
+        ]
+      }
     ]
 }
