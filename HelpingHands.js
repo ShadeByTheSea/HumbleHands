@@ -126,28 +126,25 @@ if (Meteor.isClient) {
 	
 	Template.createEvent.rendered = function() {
 		if(pageRendered) return;
-		pageRendered = true;
+			pageRendered = true;
+			
+		Organization = new Meteor.Collection('organization');
+		Events = new Meteor.Collection('events');
 		
 		$("table div:last-of-type").on("click", submitClick);
 		
 		function submitClick(e) {
 			//form_date = new Date($("#date").val()),
 			//form_date = new Date(document.getElementById("date").value),
-			
-			console.log("textfield: " + $('#date').val());
+
 			var input_date = Date.parse($('#date').val());
-			console.log("after parse: " + input_date);
 			var myDate = new Date(input_date);
-			var start_date = myDate.getTime() + $("#startTime");
 			
 			var tag_list = new Array();
 			$("input[name='filterCheck']").each(function(i, e){
 				if(e.checked)
 					tag_list.push(e.value);
 			});
-			
-			console.log("startDate: " + myDate.toDateString() + " " + $("#startTime").val())
-			console.log("endDate: " + myDate.toDateString() + " " + $("#endTime").val())
 			
 			var newEvt = {
 				"name": $("#eventName").val(),
@@ -162,14 +159,15 @@ if (Meteor.isClient) {
 				"state": $("#").val(),
 				"zip": $("#zip").val(),
 				"tags": tag_list,
-				"signups": "",
-				"organizers": ""
+				"signups": [""],
+				"organizers": [Meteor.user()]
 			};
 			insertEvent(newEvt);
+			window.location = "http://localhost:3000";
 		}
 		
 		function insertEvent(obj) {
-			console.log(obj);
+			Events.insert(obj);
 		}
 	};
 }
