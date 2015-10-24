@@ -40,6 +40,7 @@ if (Meteor.isClient) {
 		$('.lm-social-share-pinterest').html(icon);
 	 };
 	 
+	 
 	Meteor.startup(function(){
 		currentFilter = "event";	//1 - event, 2 - organization, 3 - location, 4 - tag list
 		Organization = new Meteor.Collection('organization');
@@ -47,8 +48,10 @@ if (Meteor.isClient) {
 		
 		
 		$("input[name='filter']").each(function(i, e){e.addEventListener("click", radioButtonSelect);});
+		//$("input[name='filter']").each(function(i, e){e.addEventListener("click", function(){alert();});});
 		$("#user_search").on("input", inputSearch);
 		$("#search_submit").on("click", inputSearch);
+		console.log($("input[name='filter']"));
 		
 		function inputSearch() {
 			$("#search_results").empty();
@@ -102,7 +105,7 @@ if (Meteor.isClient) {
 			console.log("new row: " + entryHTML);
 			$("#search_results")[0].innerHTML += entryHTML;
 			
-			//console.log("new entry html: " + entryHTML);
+			console.log("new entry html: " + entryHTML);
 		}
 		
 		function radioButtonSelect(e) {
@@ -120,7 +123,7 @@ if (Meteor.isClient) {
 			tmp_result.forEach(insertEventResult);
 		}
 	
-	})
+	});
 }
 
 
