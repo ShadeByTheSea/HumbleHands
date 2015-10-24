@@ -57,7 +57,33 @@ body{
 .accounts-dialog {
     color: black !important;
 }
-
+/** *****| Mobile Navigation |***** **/
+.mobile_nav {
+    position: relative;
+    top: 80px;
+    margin-top: 80px;
+}
+.link_mobile ul li a {
+    color: #FFF;
+    font-size: 1.5em;
+}
+.login_mobile {
+    position: relative;
+    background-color: #b2bd00;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+.login-link-text {
+    color: #FFF;
+}
+.account_mobile {
+    position: relative;
+    margin-top: 5px;
+}
+.account_mobile a {
+    color: #FFF;
+    font-size: 1.2em;
+}
 /** *****| Logo |***** **/
 .logo {
     position: absolute;
@@ -216,7 +242,6 @@ body{
     font-style: italic;
     font-size: 2em;
 }
-
 /** *****| Hashtags |***** **/
 #socialShare {
     background-color: #FFFFFF;
