@@ -10,8 +10,8 @@
   <!-- *****| Page Wrap |***** -->
   <div id="pageWrap">
     
-    <!-- *****| Navigation |***** -->
-    <div class="container_fluid visible-md">
+      <!-- *****| Navigation |***** -->
+    <div class="container-fluid hidden-xs visibile-sm visible-md visible-lg">
       <div id="navigation">
         <div class="container">
           <div id="navigationLinks" class="col-md-6">
@@ -43,76 +43,68 @@
           </div>
         </div>
     </div>
+    <!-- *****| Mobile Navigation |***** -->
+  
+	<div class="row mobile_nav">
+      <div class="container-fluid visible-xs hidden-sm hidden-md hidden-lg">
+        <div class="col-xs-6 col-xs-offset-3 text-center">
+          <div class="link_mobile">
+            <ul class="list-unstyled">
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Find Volunteers</a></li>
+              <li><a href="#">Explore the Causes</a></li>
+            </ul>
+          </div>
+          <div class="login_mobile">
+            {{> loginButtons}}
+          </div>
+          <div class="account_mobile">
+            <a href="#"><span>My Account</span></a>
+          </div>
+        </div>
+      </div>  
+    </div>
 	
-    <!-- *****| Tag Line |***** -->
+    <!-- *****| Page Title |***** -->
     <div class="row">
       <div class="container">
-        <div class="tagline col-md-6 col-md-offset-3 text-center">
-          <span>We are a community-based group connecting Hampton Roads volunteers with the organizations that need them the most.</span>
+        <div class="pagetitle col-md-10 col-md-offset-1 text-center">
+          <h1>Find Your Opportunity</h1>
         </div>
       </div>
     </div>
  
-    <!-- *****| Find a Opportunity Section |****** -->
-    <div class="row opportunityFinder">
-      <div class="container">
-        <div id="searchField" class="col-md-8 col-md-offset-2">
-          <div id="opportunityLinks" class="col-md-6">
-            <div id="findOpportunity">
-              <div id="filter_select">
-                <span><input type='radio' name="filter" value="event" checked="checked">Event</span>
-                <span><input type='radio' name="filter" value="organization">Organization</span>
-                <span><input type='radio' name="filter" value="location">City</span>
-                <span><input type='radio' name="filter" value="tags">Type of Event</span>
-              </div>
-              <div id="search">
-                <input type='text' name="search" id="user_search">
-                <div id="search_submit"><i class="fa fa-search"></i></div>
-              </div>
+   <!-- *****| Content |***** -->
+   <div class="row" id="content-wrap">
+     <div class="container-fluid col-md-12 no-padding">
+     <div class="white-topper"></div>
+        <div id="white-section">
+          <div class="container text-center">
+            <div class="col-md-6 col-md-offset-3">
+            <p>Content here</p>
             </div>
           </div>
-		  <h3>Search Results</h3>
-          <div id="search_results" class="col-md-6"></div>
-          <div class="clearfix"></div>
+          <div class="spacer"></div>
         </div>
-      </div>
-    </div>
-    
-   
-   <!-- inner content -->
-    <div class="row" id="innerContentArea">
-		
-		
-		
-    </div>
+     </div>
+   </div>
     
     <!-- *****| Quote / Stat Section |***** -->
     <div class="row" id="quoteSection">
       <div class="container-fluid col-md-12 no-padding">
-        <div class="green-topper"></div>
         <div id="green-section">
           <div class="container text-center">
             <div class="col-md-6 col-md-offset-3">
-              <span class="quote">"We make a living by what we do, but we make a life by what we give."</span><br>
-              <span class="quoteName">-Winston Churchill</span>
+              <span class="quote">"Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it’s the only thing that ever has."</span><br>
+              <span class="quoteName">-Margaret Mead</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-	
-    <div class="row" id="socialShare">
-      <div class="container text-center">
-        <div class="hashtag_title col-md-12">
-          <span>#HumbleHandsHR</span>
-        </div>
-        <div class="hashtags col-md-10 col-md-offset-1">
-          
-        </div>
-      </div>
-    </div>
+
   
-  <!-- *****| Footer |***** -->
+ <!-- *****| Footer |***** -->
   <div id="footer" class="row">
     <div class="container-fluid col-xs-12" id="footer">
       <div class="footer_wrap">
@@ -130,6 +122,7 @@
     </div>
   </div>
   
+ 
 </div><!-- End pageWrap -->
 </template>
 
