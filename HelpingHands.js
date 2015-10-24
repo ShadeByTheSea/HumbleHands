@@ -126,7 +126,10 @@ if (Meteor.isClient) {
 	
 	Template.createEvent.rendered = function() {
 		if(pageRendered) return;
-		pageRendered = true;
+			pageRendered = true;
+			
+		Organization = new Meteor.Collection('organization');
+		Events = new Meteor.Collection('events');
 		
 		$("table div:last-of-type").on("click", submitClick);
 		
@@ -160,6 +163,7 @@ if (Meteor.isClient) {
 				"organizers": [Meteor.user()]
 			};
 			insertEvent(newEvt);
+			window.location = "http://localhost:3000";
 		}
 		
 		function insertEvent(obj) {
