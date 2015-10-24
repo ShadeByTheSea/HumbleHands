@@ -4,6 +4,9 @@ Router.route('/', {
 Router.route('/inner', {
     template: 'inner'
 });
+Router.route('/createEvent', {
+    template: 'createEvent'
+});
 
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
