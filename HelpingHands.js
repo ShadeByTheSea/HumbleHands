@@ -33,8 +33,7 @@ if (Meteor.isClient) {
 	 };
 	 
 	Meteor.startup(function(){
-		oldInput = "";
-		currentFilter = "name";	//1 - name, 2 - date+time, 3 - location, 4 - tag list
+		currentFilter = "event";	//1 - event, 2 - organization, 3 - location, 4 - tag list
 		Organization = new Meteor.Collection('organization');
 		Events = new Meteor.Collection('events');
 		
@@ -44,45 +43,32 @@ if (Meteor.isClient) {
 		$("#search_submit").on("click", inputSearch);
 		
 		function inputSearch() {
-			if(oldInput == $("#user_search")[0].value || $("#user_search")[0].value == "" || document.getElementById)
+			$("#search_results").empty();
+			if($("#user_search")[0].value == "")
 				return 1;
 			
-			//Clear results
-			while($("#search_results").firstChild)
-				$("#search_results").removeChild($("#search_results"));
-			
 			switch(currentFilter) {
-				case "name":
-					var searchObj = {organization: { $text:{ $search: $("#user_search")[0].value } }}
+				case "event":
+					var searchObj = {event: new RegExp($("#user_search")[0].value, 'i')}
 					break;
-				case "date":
-					var searchObj = {date:getUserDate()}
+				case "organization":
+					var searchObj = {}
 					break;
 				case "location":
-					var searchObj = {location:{ $text: { $search: $("#user_search")[0].value } }}
+					var searchObj = {city: new RegExp($("#user_search")[0].value, 'i') }
 					break;
 				case "tag list":
 					var searchObj = {tags:{ $in: [ $("#user_search")[0].value.replace(' ', ',') ] }}
 					break;
 			}
-			var results = Events.find(/* searchObj */).fetch();
-			if(typeof results == "undefined" || results == null) {
+			var results = Events.find(searchObj).fetch();
+			if(typeof results == "undefined" || results == null || results.length <= 0) {
 				$("#search_results")[0].innerHTML = "<h3>No Results!</h3>";
 			} else {
 				results.forEach(insertEventResult);
 			}
 			
-			oldInput = $("#user_search")[0].value;
 			return 0;
-		}
-		
-		/*Processes input field and converts it to a string for the database
-		*args: none
-		*return: string for database search*/
-		function getUserDate() {
-			var udate = $("#search_field")[0].value;
-			//TODO - convert user's string (e.g. "December 15") to database formatted time (e.g. 17263275482)
-			return udate;
 		}
 		
 		/*Extract data from argument, apply HTML formatting, add to "search_results" element
@@ -101,6 +87,7 @@ if (Meteor.isClient) {
 			"<span name=\"city\">"+evt_city+"</span>"+
 			"<span name=\"state\">"+evt_state+"</span>"+
 			"</div><br/>";
+			console.log("new row: " + entryHTML);
 			$("#search_results")[0].innerHTML += entryHTML;
 			
 			//method 2
