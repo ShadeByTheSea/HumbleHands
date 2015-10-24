@@ -12,7 +12,7 @@ if (Meteor.isClient) {
 		  var opts ={
 			facebook: true,
 			twitter: true,
-			pinterest: false,
+			pinterest: true,
 			shareData: {
 			  url: 'http://google.com'
 			}
@@ -23,13 +23,14 @@ if (Meteor.isClient) {
 	  
 	  
 	Template.lmSocialShare.rendered = function(){
-		var inner = $('.lm-social-share-facebook').html();
-		var icon = "<i class='fa fa-facebook-square'></i>";
-		$('.lm-social-share-facebook').html(icon + inner);
+		var icon = "<div class='socialBubble'><i class='fa fa-facebook-f'></i></div>";
+		$('.lm-social-share-facebook').html(icon);
 		
-		var inner = $('.lm-social-share-twitter').html();
-		var icon = "<i class='fa fa-twitter-square'></i>";
-		$('.lm-social-share-twitter').html(icon + inner);
+		var icon = "<div class='socialBubble'><i class='fa fa-twitter'></i></div>";
+		$('.lm-social-share-twitter').html(icon);
+		
+		var icon = "<div class='socialBubble'><i class='fa fa-pinterest-p'></i></div>";
+		$('.lm-social-share-pinterest').html(icon);
 	 };
 	 
 	Meteor.startup(function(){
