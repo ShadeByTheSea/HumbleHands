@@ -5,7 +5,8 @@
             "organization":"Chesapeake Care, Inc.",
             "description":"An test event",
             "createtime":1445616613000,
-            "date":1446235813000,
+            "startDate":1446235813000,
+            "endDate":1446235813000,
             "volunteer":20,
             "address":"150 Granby st",
             "city":"Norfolk",
@@ -15,7 +16,7 @@
                 "animal",
                 "taco"
             ],
-            "singups":[
+            "signups":[
                 "volunteer"
             ],
             "organizers":[
@@ -27,7 +28,8 @@
             "organization":"Chesapeake Care, Inc.",
             "description":"An test event",
             "createtime":1445616613000,
-            "date":1446322213000,
+            "startDate":1446322213000,
+            "endDate":1446322213000,
             "volunteer":20,
             "address":"150 Granby st",
             "city":"Norfolk",
@@ -36,7 +38,7 @@
             "tags":[
                 "children"
             ],
-            "singups":[
+            "signups":[
                 "volunteer"
             ],
             "organizers":[
@@ -48,7 +50,8 @@
             "organization":"Alzheimer's Association",
             "description":"An test event",
             "createtime":1445616613000,
-            "date":1446235813000,
+            "startDate":1446235813000,
+            "endDate":1446235813000,
             "volunteer":20,
             "address":"1688 Laskin Rd",
             "city":"Virginia Beach",
@@ -58,7 +61,7 @@
                 "health",
                 "enviroment"
             ],
-            "singups":[
+            "signups":[
                 "volunteer"
             ],
             "organizers":[

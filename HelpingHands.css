@@ -7,7 +7,9 @@ body{
     border: 0;
     margin: 0;
 }
-
+h3{
+    color: #B2BD00;
+}
 /** *****| Image Rotation |***** **/
 .fadein { 
     position: fixed;
@@ -57,6 +59,8 @@ body{
 .accounts-dialog {
     color: black !important;
 }
+
+
 /** *****| Mobile Navigation |***** **/
 .mobile_nav {
     position: relative;
@@ -127,7 +131,7 @@ body{
 }
 #opportunityLinks {
     margin-bottom: 10px;
-    border-right: 1px white solid;
+    border-right: 0px white solid;
 }
 #searchField {
     background-color: #459ed7;
@@ -194,7 +198,14 @@ body{
 #findVolunteers a {
     color: white;
 }
-
+#search_results span{
+    color: white;
+    display: block;
+}
+#search_results span[name=name]{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /** *****| Browse Opportunities |***** **/
 .title {
     margin-top: 20px;
@@ -274,6 +285,47 @@ body{
   padding-bottom: 30px;
 }
 
+
+/** ****| Event Form|**** **/
+
+#form-box h2 {
+  font-fmaily: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #b2bd00;
+  text-align: center;
+}
+#form-box {
+  background-color: #ebebeb;
+  padding: 10px 60px 30px;
+  border-radius: 3px;
+}
+.form-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2c78ad;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#form-box td {
+  width: 200px;
+}
+
+#form-box td input {
+  width: auto;
+}
+#submit-btn {
+  text-align: center;
+  height: 45px;
+  background-color: #b2bd00;
+  line-height: 45px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+
 /** *****| Quote |***** **/
 .green-topper {
   background-image: url(images/green-topper.png);
@@ -287,7 +339,7 @@ body{
 }
 #green-section {
   background-color: #b2bd00;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 .quote {
@@ -315,7 +367,7 @@ body{
 }
 /** *****| Footer |***** **/
 #footer {
-    background-color: #FFFFFF;
+    background-color: #b2bd00;
     background-image: url(images/footer.png);
     height: 200px;
     background-position: top center;
@@ -324,9 +376,6 @@ body{
 }
 .footer_wrap {
     margin-top: 40px;
-}
-.green {
-  background-color: #b2bd00 !important;
 }
 .social span {
     color: #FFF;
