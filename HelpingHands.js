@@ -65,7 +65,7 @@ if (Meteor.isClient) {
 					var searchObj = {tags:{ $in: regexarr }}
 					break;
 			}
-			var results = Events.find(searchObj).fetch();
+			var results = Events.find(searchObj, {sort: {date:1}}).fetch();
 			if(typeof results == "undefined" || results == null || results.length <= 0) {
 				$("#search_results")[0].innerHTML = "<h3>No Results!</h3>";
 			} else {
