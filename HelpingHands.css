@@ -115,11 +115,25 @@ body{
     height: 100%;
 }
 #opportunityLinks {
-    padding: 2%;
+    margin-bottom: 10px;
+    border-right: 1px white solid;
 }
 #searchField {
     background-color: #459ed7;
     border-radius: 10px;
+    padding: 0;
+}
+#search_title {
+    background-color: #2c78ac;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 0;
 }
 #filter_select span {
     position: relative;
@@ -154,6 +168,20 @@ body{
 	height:100%;
 	line-height:100%;
 	text-align:center;
+}
+#findVolunteers {
+    background-color: #2c78ac;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 5px 0;
+}
+#findVolunteers a {
+    color: white;
 }
 
 /** *****| Browse Opportunities |***** **/
