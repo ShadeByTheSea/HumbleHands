@@ -128,10 +128,8 @@ if (Meteor.isClient) {
 		$("table div:last-of-type").on("click", submitClick);
 		
 		function submitClick(e) {
-			var org_name = $("#organizationName"),
 			//form_date = new Date($("#date").val()),
 			//form_date = new Date(document.getElementById("date").value),
-			volunteers = ;
 			
 			var tag_list = new Array();
 			$("input[name='filterCheck']").forEach(function(i, e){
@@ -139,7 +137,7 @@ if (Meteor.isClient) {
 					tag_list.push(e.value);
 			});
 			
-			newEvt = {
+			var newEvt = {
 				"name": $("#eventName"),
 				"organization": $("#organizationName"),
 				"description": $("#eventDescription").value,
@@ -155,6 +153,7 @@ if (Meteor.isClient) {
 				"signups": asdf,
 				"organizers": asdf
 			};
+			insertEvent(newEvt);
 		}
 		
 		function insertEvent(obj) {
