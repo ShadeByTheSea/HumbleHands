@@ -101,6 +101,10 @@ if (Meteor.isClient) {
 		
 		function radioButtonSelect(e) {
 			currentFilter = e.currentTarget.value;
+			if(e.currentTarget.value == "tags")
+				$("#user_search").attr("placeholder", "Children Elderly etc.");
+			else
+				$("#user_search").attr("placeholder", "");
 			inputSearch();
 		}
 		
