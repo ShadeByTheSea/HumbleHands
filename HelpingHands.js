@@ -80,7 +80,7 @@ if (Meteor.isClient) {
 		*return: none*/
 		function insertEventResult(entry, index, arr) {
 			var evt_name = entry.name,
-			evt_date = entry.date,
+			evt_date = new Date(entry.date),
 			evt_city = entry.city,
 			evt_state = entry.state,
 			evt_org = entry.organization;
@@ -88,10 +88,9 @@ if (Meteor.isClient) {
 			//method 1
 			var entryHTML = "<div id=\"result"+(index+1)+"\" class=\"result_entry\">"+
 			"<span name=\"name\">"+evt_name+"</span>"+
-			"<span name=\"organization\">"+evt_org+"</span>"+
-			"<span name=\"date\">"+evt_date+"</span>"+
 			"<span name=\"city\">"+evt_city+"</span>"+
-			"<span name=\"state\">"+evt_state+"</span>"+
+			"<span name=\"date\">"+evt_date.toDateString()+"</span>"+
+			"<span name=\"organization\">"+evt_org+"</span>"+
 			"</div><br/>";
 			console.log("new row: " + entryHTML);
 			$("#search_results")[0].innerHTML += entryHTML;
