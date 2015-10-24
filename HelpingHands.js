@@ -5,7 +5,7 @@ Router.route('/inner', {
     template: 'inner'
 });
 Router.route('/createEvent', {
-	template: 'createEvent'
+    template: 'createEvent'
 });
 
 if (Meteor.isServer) {
