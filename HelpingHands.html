@@ -69,7 +69,7 @@
           </div>
         </div>
     </div>
-	{{> socialShareBasic}}
+	
  
     <!-- *****| Find a Opportunity Section |****** -->
     <div class="row opportunityFinder">
@@ -93,6 +93,7 @@
           <div id="searchResults" class="col-md-6">
             <span>Search Results</span>
           </div>
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
@@ -128,19 +129,43 @@
     </div>
     
     <!-- *****| Quote / Stat Section |***** -->
-    <!--<div class="row" id="quoteSection">
+    <div class="row" id="quoteSection">
       <div class="container-fluid col-xs-12 no-padding">
         <div class="green-topper"></div>
         <div id="green-section">
-          <p class="quote">We make a living by what we do, but we make a life by what we give.</p>
+          <div class="container text-center">
+            <span class="quote">"We make a living by what we do, but we make a life by what we give."</span><br>
+            <span class="quoteName">-Winston Churchill</span>
+          </div>
         </div>
       </div>
-    </div>-->
+    </div>
+    <div class="row" id="socialShare">
+      <div class="container text-center">
+        <div class="hashtag_title col-md-12">
+          <span>#humblehands</span>
+        </div>
+        <div class="hashtags col-md-10 col-md-offset-1">
+          
+        </div>
+      </div>
+    </div>
   
   <!-- *****| Footer |***** -->
   <div id="footer" class="row">
     <div class="container-fluid col-xs-12" id="footer">
-      
+      <div class="footer_wrap">
+        <div class="links col-md-4">
+          
+        </div>
+        <div class="social col-md-4 text-center">
+          <span>Follow Us!</span>
+          {{> socialShareBasic}}
+        </div>
+        <div class="legal col-md-4">
+          
+        </div>
+      </div>
     </div>
   </div>
   
