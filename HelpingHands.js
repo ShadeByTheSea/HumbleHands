@@ -131,7 +131,9 @@ if (Meteor.isClient) {
 			//form_date = new Date($("#date").val()),
 			//form_date = new Date(document.getElementById("date").value),
 			
+			console.log("textfield: " + $('#scheduleDate').val());
 			var input_date = Date.parse($('#scheduleDate').val());
+			console.log("after parse: " + input_date);
 			var myDate = new Date(input_date);
 			var start_date = myDate.getTime() + $("#startTime");
 			
