@@ -134,7 +134,7 @@ if (Meteor.isClient) {
 			//form_date = new Date($("#date").val()),
 			//form_date = new Date(document.getElementById("date").value),
 			
-			var input_date = $('#scheduleDate').val();
+			var input_date = Date.parse($('#scheduleDate').val());
 			var myDate = new Date(input_date);
 			var start_date = myDate.getTime() + $("#startTime");
 			
@@ -144,18 +144,21 @@ if (Meteor.isClient) {
 					tag_list.push(e.value);
 			});
 			
+			console.log("startDate: " + myDate.toDateString() + " " + $("#startTime").val())
+			console.log("endDate: " + myDate.toDateString() + " " + $("#endTime").val())
+			
 			var newEvt = {
 				"name": $("#eventName"),
-				"organization": $("#organizationName"),
-				"description": $("#eventDescription").value,
+				"organization": $("#organizationName").val(),
+				"description": $("#eventDescription").val(),
 				"createtime": Date.now(),
-				"startDate": Date.parse(input_date + " " + $("#startTime").val()),
-				"endDate": Date.parse(input_date + " " + $("#endTime").val()),
-				"volunteer": $("#numberOfVolunteers").value,
-				"address": $("#locationAddress").value,
-				"city": $("#city").value,
-				"state": $("#").value,
-				"zip": $("#zip").value,
+				"startDate": Date.parse(myDate.toDateString() + " " + $("#startTime").val()),
+				"endDate": Date.parse(myDate.toDateString() + " " + $("#endTime").val()),
+				"volunteer": $("#numberOfVolunteers").val(),
+				"address": $("#locationAddress").val(),
+				"city": $("#city").val(),
+				"state": $("#").val(),
+				"zip": $("#zip").val(),
 				"tags": tag_list,
 				"signups": "",
 				"organizers": ""
