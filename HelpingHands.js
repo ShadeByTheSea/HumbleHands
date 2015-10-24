@@ -150,7 +150,7 @@ if (Meteor.isClient) {
 			console.log("endDate: " + myDate.toDateString() + " " + $("#endTime").val())
 			
 			var newEvt = {
-				"name": $("#eventName"),
+				"name": $("#eventName").val(),
 				"organization": $("#organizationName").val(),
 				"description": $("#eventDescription").val(),
 				"createtime": Date.now(),
