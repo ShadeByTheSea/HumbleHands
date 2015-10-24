@@ -24,3 +24,4 @@ accounts-ui
 lukemadera:social-share
 fortawesome:fontawesome
 accounts-facebook
+iron:router

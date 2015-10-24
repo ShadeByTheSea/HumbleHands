@@ -1,3 +1,10 @@
+Router.route('/', {
+    template: 'index'
+});
+Router.route('/inner', {
+    template: 'inner'
+});
+
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
     Events = new Meteor.Collection('events');
