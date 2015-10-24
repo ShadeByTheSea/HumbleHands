@@ -102,6 +102,17 @@ body{
     color: #FFFFFF;
     font-size: 1.5em;
 }
+
+/** *****| Page Title |***** **/
+.pagetitle {
+    position: relative;
+    margin-top: 95px;
+}
+.pagetitle h1 {
+    color: #FFFFFF;
+    font-size: 4em;
+}
+
 /** *****| Search Field |***** **/
 #pageWrap{
     z-index: 5;
@@ -187,6 +198,7 @@ body{
 /** *****| Browse Opportunities |***** **/
 .title {
     margin-top: 20px;
+    padding-top: 20px;
     background-color: #FFF;
     color: #459ed7;
     font-weight: bold;
@@ -243,6 +255,23 @@ body{
 .browseText {
     position: relative;
     mergin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/** ****| CONTENT |**** **/
+.white-topper {
+  background-image: url(images/white-topper.png);
+  height: 46px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#white-section {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 /** *****| Quote |***** **/
@@ -295,6 +324,9 @@ body{
 }
 .footer_wrap {
     margin-top: 40px;
+}
+.green {
+  background-color: #b2bd00 !important;
 }
 .social span {
     color: #FFF;
