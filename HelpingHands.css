@@ -285,6 +285,119 @@ h3{
   padding-bottom: 30px;
 }
 
+#description {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+}
+#details {
+  width: 50%; 
+  float: right;
+  margin-top: 65px;
+  padding: 0 10px;
+}
+.event {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #2c78ad;
+  display: block;
+}
+.org {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #b2bd00;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+.desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  display: block;
+  margin-top: 5px;
+}
+.freq {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin-top: 10px;
+}
+.vols {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #2c78ad;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#description .fa {
+  color: #2c78ad;
+  margin-right: 5px;
+}
+#description .tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.location-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #b2bd00;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+.address {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  display: block;
+}
+.phone {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2c78ad;
+  font-weight: bold;
+  display: block;
+}
+.date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+.time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  display: block;
+}
+#details img {
+  margin-top: 25px;
+}
+#signup-btn {
+  text-align: center;
+  height: 45px;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #b2bd00;
+  line-height: 45px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  border-radius: 5px;
+}
+.back-to {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  display: block;
+  margin-top: 25px;
+  color: #2c78ad;
+  text-decoration: underline;
+}
+
 
 /** ****| Event Form|**** **/
 
