@@ -7,7 +7,9 @@ body{
     border: 0;
     margin: 0;
 }
-
+h3{
+    color: #B2BD00;
+}
 /** *****| Image Rotation |***** **/
 .fadein { 
     position: fixed;
@@ -129,7 +131,7 @@ body{
 }
 #opportunityLinks {
     margin-bottom: 10px;
-    border-right: 1px white solid;
+    border-right: 0px white solid;
 }
 #searchField {
     background-color: #459ed7;
@@ -196,7 +198,14 @@ body{
 #findVolunteers a {
     color: white;
 }
-
+#search_results span{
+    color: white;
+    display: block;
+}
+#search_results span[name=name]{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /** *****| Browse Opportunities |***** **/
 .title {
     margin-top: 20px;
