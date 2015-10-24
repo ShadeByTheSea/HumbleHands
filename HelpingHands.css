@@ -52,12 +52,15 @@ body{
     top: 13px;
 }
 #accountLinks ul li a {
-    color: #FFF;
+    color: #222222;
+}
+.accounts-dialog {
+    color: black !important;
 }
 
 /** *****| Logo |***** **/
-.logo{
-  position: absolute;
+.logo {
+    position: absolute;
     top: 10px;
     z-index: 10;
     left: 50%;
@@ -98,76 +101,6 @@ body{
     background-color: #FFFFFF;
     height: auto;
 }
-/** *****| Browse Opportunities |***** **/
-.title{
-    background-color: #ffffff;
-    color: #459ed7;
-    padding-top: 20px;
-    font-weight: bold;
-}
-#browseOpportunities{
-    background-color: #ffffff;
-    padding: 10px 0px;
-}
-#browseOpportunities div div{
-    float: left;
-}
-.paw-blue{
-    background-color: #459ed7;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    text-align: center;
-}
-.paw-green{
-    background-color: #b2bd00;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    text-align: center;
-}
-.paw-orange{
-    background-color: #bd7433;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    text-align: center;
-}
-.paw-blue i, .paw-green i, .paw-orange i{
-    color: white;
-    font-size: 24px;
-    position: relative;
-    top: 10px;
-}
-.green-topper {
-  background-image: url(images/green-topper.png);
-  height: 46px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-#quoteSection{
-    background-color: #ffffff;
-}
-#green-section {
-  background-color: #b2bd00;
-}
-
-#footer {
-  background-image: url(images/footer.png);
-  height: 200px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-#filter_select span{
-	display:block;
-}
 #search{
 	height:26px;
 	clear:both;
@@ -189,6 +122,123 @@ body{
 	line-height:100%;
 	text-align:center;
 }
+
+/** *****| Browse Opportunities |***** **/
+.title {
+    background-color: #FFF;
+    color: #459ed7;
+    font-weight: bold;
+    font-size: 2em;
+}
+#browseOpportunities {
+    background-color: #ffffff;
+    padding: 10px 0px;
+}
+.paw-blue {
+    background-color: #459ed7;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-green { 
+    background-color: #b2bd00;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-orange {
+    background-color: #bd7433;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.paw-blue i, .paw-green i, .paw-orange i {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    top: 10px;
+}
+
+/** *****| Quote |***** **/
+.green-topper {
+  background-image: url(images/green-topper.png);
+  height: 46px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#quoteSection{
+    background-color: #ffffff;
+}
+#green-section {
+  background-color: #b2bd00;
+}
+.quote {
+    font-size: 3em;
+}
+.quoteName {
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+/** *****| Hashtags |***** **/
+#socialShare {
+    background-color: #FFFFFF;
+}
+.hashtag_title {
+    margin-top: 10px;
+}
+.hashtag_title span {
+    font-size: 2em;
+    font-style: italic;
+}
+.hashtags {
+    min-height: 100px;
+}
+/** *****| Footer |***** **/
+#footer {
+    background-color: #FFFFFF;
+    background-image: url(images/footer.png);
+    height: 200px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.footer_wrap {
+    margin-top: 40px;
+}
+.social span {
+    color: #FFF;
+    font-size: 1.3em;
+}
+.socialBubble {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: #FFF;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.socialBubble i {
+    position: relative;
+    top: 12px;
+    font-size: 24px;
+    
+}
+.socialBubble:hover {
+    background-color: #459ed7;
+}
+.no-padding {
+  padding: 0;
+}
+
+#filter_select span{
+	display:block;
+}
+
 .lm-social-share-btn{
 	display:inline-block
 }
