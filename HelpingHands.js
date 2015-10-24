@@ -11,7 +11,7 @@ Router.route('/createEvent', {
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
     Events = new Meteor.Collection('events');
-	var rendered = false;
+	var pageRendered = false;
 	Meteor.startup(function () {
 		// code to run on server at startup
 	});
@@ -46,8 +46,8 @@ if (Meteor.isClient) {
 	 
 	 
 	Template.index.rendered = function(){
-		if(rendered) return;
-		rendered = true;
+		if(pageRendered) return;
+		pageRendered = true;
 		currentFilter = "event";	//1 - event, 2 - organization, 3 - location, 4 - tag list
 		Organization = new Meteor.Collection('organization');
 		Events = new Meteor.Collection('events');
@@ -119,13 +119,47 @@ if (Meteor.isClient) {
 				$("#user_search").attr("placeholder", "");
 			inputSearch();
 		}
-		
-		populate = function() {
-			//var tmp_search = {name:"TestOne"};
-			var tmp_result = Events.find("One").fetch();
-			tmp_result.forEach(insertEventResult);
-		}
+	};
 	
+	Template.createEvent.rendered = function() {
+		if(pageRendered) return;
+		pageRendered = true;
+		
+		$("table div:last-of-type").on("click", submitClick);
+		
+		function submitClick(e) {
+			var org_name = $("#organizationName"),
+			//form_date = new Date($("#date").val()),
+			//form_date = new Date(document.getElementById("date").value),
+			volunteers = ;
+			
+			var tag_list = new Array();
+			$("input[name='filterCheck']").forEach(function(i, e){
+				if(e.attr("checked"))
+					tag_list.push(e.value);
+			});
+			
+			newEvt = {
+				"name": $("#eventName"),
+				"organization": $("#organizationName"),
+				"description": $("#eventDescription").value,
+				"createtime": asdf,
+				"startDate": asdf,
+				"endDate": asdf,
+				"volunteer": $("#numberOfVolunteers").value,
+				"address": $("#locationAddress").value,
+				"city": $("#city").value,
+				"state": $("#").value,
+				"zip": $("#zip").value,
+				"tags": tag_list,
+				"signups": asdf,
+				"organizers": asdf
+			};
+		}
+		
+		function insertEvent(obj) {
+			console.log(obj);
+		}
 	};
 }
 
