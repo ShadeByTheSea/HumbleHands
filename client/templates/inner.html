@@ -1,32 +1,6 @@
-<head>
-  
-  <title>Humble Hands</title>
-  
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  
-  <!-- *****| Fader Rotation |***** -->
-  
-  <!--<script>
-      $(function(){
-          $ds =$('.fadein div');
-          $ds.hide().eq(0).show();
-          setInterval(function(){
-              $ds.filter(':visible').fadeOut(function(){
-                  var $div = $(this).next('div');
-                  if ($div.length == 0) {
-                      $ds.eq(0).fadeIn();
-                  }else{
-                      $div.fadeIn();
-                  }
-              });
-          },5000);
-      });
-  </script>-->
-    
-</head>
 
-<body>
-  
+<template name="inner">
+
   <!-- *****| Background Image |***** -->
   <div class="fadein">
     <div class="rotator_01"></div>
@@ -37,7 +11,7 @@
   <div id="pageWrap">
     
     <!-- *****| Navigation |***** -->
-    <div class="container-fluid hidden-xs visibile-sm visible-md visible-lg">
+    <div class="container_fluid visible-md">
       <div id="navigation">
         <div class="container">
           <div id="navigationLinks" class="col-md-6">
@@ -70,47 +44,77 @@
         </div>
     </div>
 	
-    <!-- *****| Page Title |***** -->
+    <!-- *****| Tag Line |***** -->
     <div class="row">
       <div class="container">
-        <div class="pagetitle col-md-10 col-md-offset-1 text-center">
-          <h1>Find Your Opportunity</h1>
+        <div class="tagline col-md-6 col-md-offset-3 text-center">
+          <span>We are a community-based group connecting Hampton Roads volunteers with the organizations that need them the most.</span>
         </div>
       </div>
     </div>
  
-   <!-- *****| Content |***** -->
-   <div class="row" id="content-wrap">
-     <div class="container-fluid col-md-12 no-padding">
-     <div class="white-topper"></div>
-        <div id="white-section">
-          <div class="container text-center">
-            <div class="col-md-6 col-md-offset-3">
+    <!-- *****| Find a Opportunity Section |****** -->
+    <div class="row opportunityFinder">
+      <div class="container">
+        <div id="searchField" class="col-md-8 col-md-offset-2">
+          <div id="opportunityLinks" class="col-md-6">
+            <div id="findOpportunity">
+              <div id="filter_select">
+                <span><input type='radio' name="filter" value="event" checked="checked">Event</span>
+                <span><input type='radio' name="filter" value="organization">Organization</span>
+                <span><input type='radio' name="filter" value="location">City</span>
+                <span><input type='radio' name="filter" value="tags">Type of Event</span>
+              </div>
+              <div id="search">
+                <input type='text' name="search" id="user_search">
+                <div id="search_submit"><i class="fa fa-search"></i></div>
+              </div>
             </div>
           </div>
-          <div class="spacer"></div>
+		  <h3>Search Results</h3>
+          <div id="search_results" class="col-md-6"></div>
+          <div class="clearfix"></div>
         </div>
-     </div>
-   </div>
+      </div>
+    </div>
+    
+   
+   <!-- inner content -->
+    <div class="row" id="innerContentArea">
+		
+		
+		
+    </div>
     
     <!-- *****| Quote / Stat Section |***** -->
     <div class="row" id="quoteSection">
       <div class="container-fluid col-md-12 no-padding">
+        <div class="green-topper"></div>
         <div id="green-section">
           <div class="container text-center">
             <div class="col-md-6 col-md-offset-3">
-              <span class="quote">"Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it’s the only thing that ever has."</span><br>
-              <span class="quoteName">-Margaret Mead</span>
+              <span class="quote">"We make a living by what we do, but we make a life by what we give."</span><br>
+              <span class="quoteName">-Winston Churchill</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+	
+    <div class="row" id="socialShare">
+      <div class="container text-center">
+        <div class="hashtag_title col-md-12">
+          <span>#HumbleHandsHR</span>
+        </div>
+        <div class="hashtags col-md-10 col-md-offset-1">
+          
+        </div>
+      </div>
+    </div>
   
   <!-- *****| Footer |***** -->
-  <div id="footer" class="row green">
-    <div class="container-fluid col-xs-12">
+  <div id="footer" class="row">
+    <div class="container-fluid col-xs-12" id="footer">
       <div class="footer_wrap">
         <div class="links col-md-4">
           
@@ -126,14 +130,6 @@
     </div>
   </div>
   
- 
 </div><!-- End pageWrap -->
-</body>
-
-
-
-<template name="socialShareBasic">
-  <div>
-    {{> lmSocialShare opts=opts}}
-  </div>
 </template>
+
