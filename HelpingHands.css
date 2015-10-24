@@ -67,15 +67,15 @@ body{
     margin-left: -81px;
 }
 
-/*#mainSection{
-    background-image: url("images/rotator01.jpg");
-    min-height: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-}*/
-
+/** *****| Tag Line |***** **/
+.tagline {
+    position: relative;
+    margin-top: 95px;
+}
+.tagline span {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
 /** *****| Search Field |***** **/
 #pageWrap{
     z-index: 5;
@@ -85,8 +85,8 @@ body{
 }
 .opportunityFinder {
     position: relative;
-    margin-top: 80px;
-    min-height: 200px;
+    margin-top: 20px;
+    height: 100%;
 }
 #opportunityLinks {
     padding: 2%;
@@ -95,10 +95,17 @@ body{
     background-color: #459ed7;
     border-radius: 10px;
 }
-#findOpportunity {
+#filter_select span {
+    position: relative;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 16px;
+}
+#filter_select input {
+    margin-right: 5px;
 }
 #searchResults {
-    background-color: #FFFFFF;
+    color: #FFFFFF;
     height: auto;
 }
 #search{
@@ -125,6 +132,7 @@ body{
 
 /** *****| Browse Opportunities |***** **/
 .title {
+    margin-top: 20px;
     background-color: #FFF;
     color: #459ed7;
     font-weight: bold;
@@ -135,13 +143,17 @@ body{
     padding: 10px 0px;
 }
 .paw-blue {
+    position: relative;
+    margin: 0 auto;
     background-color: #459ed7;
     width: 50px;
     height: 50px;
     border-radius: 25px;
     text-align: center;
 }
-.paw-green { 
+.paw-green {
+    position: relative;
+    margin: 0 auto;
     background-color: #b2bd00;
     width: 50px;
     height: 50px;
@@ -149,6 +161,8 @@ body{
     text-align: center;
 }
 .paw-orange {
+    position: relative;
+    margin: 0 auto;
     background-color: #bd7433;
     width: 50px;
     height: 50px;
@@ -159,7 +173,22 @@ body{
     color: white;
     font-size: 24px;
     position: relative;
+}
+.paw-blue .fa-paw,
+.paw-green .fa-child,
+.paw-blue .fa-medkit {
+    position: relative;
     top: 10px;
+}
+.paw-orange .fa-futbol-o,
+.paw-green .fa-recycle,
+.paw-orange .fa-heart {
+    position: relative;
+    top: 12px;
+}
+.browseText {
+    position: relative;
+    mergin-top: 10px;
 }
 
 /** *****| Quote |***** **/
@@ -175,13 +204,17 @@ body{
 }
 #green-section {
   background-color: #b2bd00;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .quote {
-    font-size: 3em;
+    background-color: inherit;
+    font-size: 2.5em;
 }
 .quoteName {
+    padding-bottom: 10px;
     font-style: italic;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 /** *****| Hashtags |***** **/
