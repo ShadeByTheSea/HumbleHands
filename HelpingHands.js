@@ -137,7 +137,7 @@ if (Meteor.isClient) {
 			
 			var tag_list = new Array();
 			$("input[name='filterCheck']").each(function(i, e){
-				if(e.attr("checked"))
+				if(e.checked)
 					tag_list.push(e.value);
 			});
 			
