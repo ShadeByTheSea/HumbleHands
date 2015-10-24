@@ -11,6 +11,7 @@ Router.route('/createEvent', {
 if (Meteor.isServer) {
 	Organization = new Meteor.Collection('organization');
     Events = new Meteor.Collection('events');
+	var rendered = false;
 	Meteor.startup(function () {
 		// code to run on server at startup
 	});
@@ -44,17 +45,17 @@ if (Meteor.isClient) {
 	 };
 	 
 	 
-	Meteor.startup(function(){
+	Template.index.rendered = function(){
+		if(rendered) return;
+		rendered = true;
 		currentFilter = "event";	//1 - event, 2 - organization, 3 - location, 4 - tag list
 		Organization = new Meteor.Collection('organization');
 		Events = new Meteor.Collection('events');
 		
 		
 		$("input[name='filter']").each(function(i, e){e.addEventListener("click", radioButtonSelect);});
-		//$("input[name='filter']").each(function(i, e){e.addEventListener("click", function(){alert();});});
 		$("#user_search").on("input", inputSearch);
 		$("#search_submit").on("click", inputSearch);
-		console.log($("input[name='filter']"));
 		
 		function inputSearch() {
 			$("#search_results").empty();
@@ -105,10 +106,9 @@ if (Meteor.isClient) {
 			"<span name=\"date\">"+evt_date.toDateString()+"</span>"+
 			"<span name=\"organization\">"+evt_org+"</span>"+
 			"</div><br/>";
-			console.log("new row: " + entryHTML);
 			$("#search_results")[0].innerHTML += entryHTML;
 			
-			console.log("new entry html: " + entryHTML);
+			//console.log("new entry html: " + entryHTML);
 		}
 		
 		function radioButtonSelect(e) {
@@ -126,7 +126,7 @@ if (Meteor.isClient) {
 			tmp_result.forEach(insertEventResult);
 		}
 	
-	});
+	};
 }
 
 
